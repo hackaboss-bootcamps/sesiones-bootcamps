@@ -1,0 +1,46 @@
+1. Presentetación
+2. Forma de trabajo - Plan académico actual.
+3. Repaso - gráfico******.
+4. Publicar.
+5. Objetivo Final
+
+===========
+1. teletrabajo
+2. Ciencia de datos (Estadistica - Sistemas)
+======
+
+
+Se desea conocer el total a pagar por parte del cliente (Se sabe que la libra (0.5 kg) de narajanjas cueta E 0.8)
+
+String nombre;->entrada
+Double valorUnitario;->Estático
+Double cantidad;->Entrada
+Double valorPagar;->Proceso 
+
+Puedes trasladar la unidad de medida a kilos  o gramos por favor 1L/ 0.5KG?
+ 
+1. Algoritmos (Análisis)
+2. Backend (java)
+3. Frontend (frm)
+
+
+
+
+PascalCase ->Class - Métodos
+calmelCase ->atributos - variables
+unders_core ->base de datos
+
+JesesArielGonzalezBonilla
+jesusArielGonzalezBonilla
+jesus_ariel_gonzalez_bonilla
+
+Tienda tienda = new Tienda();
+
+
+1. Berto
+2. Propuesta del proyecto
+3. Git
+
+
+
+

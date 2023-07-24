@@ -1,0 +1,8 @@
+Taller 
+
+1.	Se dispone de 1'000.000(P) de pesos el cual se deposita en una entidad financiera que le pagará un interés mensual del 2.5% (i) sobre la cantidad inicial acumulada cada mes. ¿Cuánto se tendrá al final de 1 año(n-en meses)?
+
+-	Aplicando la fórmula F = P * ( 1+i )^n
+
+2.	Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula es:
+			num. Pulsaciones = (220 - edad)/10
