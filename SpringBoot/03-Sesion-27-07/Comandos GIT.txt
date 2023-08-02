@@ -1,0 +1,23 @@
+Nota: Para el caso de que tenga más de una cuenta en github[n] y gitlab[n]. Dónde n puede ser una o varias.
+
+1 Eliminar la credencial guardada. 
+* Tecla windows -> credenciales
+* Buscar github -> eliminar autenticación
+
+
+1. Solo la primera vez que se use - Configurar datos generales
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+2. Clonar el repositorio
+git clone https://gitlab.com/blueoceanstart/hack-a-boss/jvb01cg/backend-java.git
+
+3. Para obtener los cambios del server(repositorio)
+git pull
+
+4. Para obtener cambios y subir mis cambios
+git pull //Obtener los cambios
+git add -A //Listar mis cambios locales
+git commit -m "Mensaje [que estoy cambiando]" 
+git push //publicar los cambios en el repositorio nube
+git pull

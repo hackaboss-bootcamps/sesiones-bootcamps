@@ -1,0 +1,33 @@
+1. Recuento 
+2. Planteamiento de 5 ejercicios
+	Registrar los libros que ha escrito un autor
+	[
+		libro= codigo, nombre, autor{id}, isbn
+		autor = nombre, correo, dni
+	]
+	Registrar inventario de los productos
+	[
+		producto = codigo, nombre, descripcion
+		invetario = fecha, codigo, producto{id}, stock
+	]
+	Registrar ventas de boleta del concierto
+	[
+		boleta = codigo, nombre_artista, fecha, valor
+		venta = dni, nombre_cliente, boleta{id}, cantidad, valor_pagar
+	]
+	Registrar asistencia de clase de spring boot
+	[
+		clase = codigo, nombre		
+		persona = dni, nombre, correo
+		asistencia = fecha, asistencia{boolean}, persona{id}, clase{id}
+	]
+	Registrar gatos de la persona
+	[		
+		cuenta = dni, nombre, numero_cuenta, saldo
+		movimiento = cuenta{id}, tipo_movimiento{boolean}, valor
+	]
+3. Asignación de equipo
+4. Desarrollo de ejercicio (60 min) -> diseñar el MR, maven{Entity, IRepository, IService, Service}
+5. Receso
+6. Socialización por equipo
+7. Continuación de la temática.

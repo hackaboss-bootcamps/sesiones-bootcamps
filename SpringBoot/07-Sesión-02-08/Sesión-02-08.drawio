@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" modified="2023-08-02T15:23:44.661Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="ipd0BVaQXIzpM8PAZ8uv" version="21.6.6" type="gitlab">
+  <diagram name="Page-1" id="RP3VcAB6JYIFknzs28-T">
+    <mxGraphModel dx="1493" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jz2vWSNyoKjlEuB22etv-1" value="1. &lt;u&gt;&lt;font color=&quot;#ff392b&quot;&gt;Entity&lt;/font&gt;&lt;/u&gt;&lt;br&gt;2.&lt;font color=&quot;#ff392b&quot;&gt;&lt;u&gt; Repository&lt;/u&gt;&lt;/font&gt;&lt;br&gt;3.&lt;font color=&quot;#ff392b&quot;&gt; IService&lt;/font&gt;&lt;br&gt;4. Service&lt;br&gt;5. Controller&lt;br&gt;Proyectado DTO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="170" y="30" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IEstudianteRepository&amp;lt;Estudiante, Long&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;findOrderByNameStudent()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+findListByNameStudent(String&amp;nbsp;nameStudent&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="255" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-3" value="Estudiante" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="180" width="110" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-4" value="+ atributos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="jz2vWSNyoKjlEuB22etv-3">
+          <mxGeometry y="26" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="jz2vWSNyoKjlEuB22etv-3">
+          <mxGeometry y="52" width="110" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-6" value="+ metodos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="jz2vWSNyoKjlEuB22etv-3">
+          <mxGeometry y="60" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;JpaRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="410" y="30" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-8" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=-0.014;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jz2vWSNyoKjlEuB22etv-2" target="jz2vWSNyoKjlEuB22etv-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="170" as="sourcePoint" />
+            <mxPoint x="430" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IEstudianteService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+List&amp;lt;Estudiante&amp;gt; all()&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+Optional&amp;lt;Estudiante&amp;gt; findById(Long id)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+Estudiante save(Estudiante estudiante)&lt;/font&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;+void update(Estudiante estudiante)&lt;br&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+void delete(Long Id)&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+List&amp;lt;Estudiante&amp;gt;findOrderByNameStudent()&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+List&amp;lt;Estudiante&amp;gt;findListByNameStudent(String&amp;nbsp;nameStudent&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="430" y="320" width="232.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-10" value="EstudianteService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="372" width="230" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-11" value="- repository: IEstudianteRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="jz2vWSNyoKjlEuB22etv-10">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="jz2vWSNyoKjlEuB22etv-10">
+          <mxGeometry y="52" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-13" value="+ @override 100%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="jz2vWSNyoKjlEuB22etv-10">
+          <mxGeometry y="60" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jz2vWSNyoKjlEuB22etv-13" target="jz2vWSNyoKjlEuB22etv-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="300" y="390" as="sourcePoint" />
+            <mxPoint x="460" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jz2vWSNyoKjlEuB22etv-15" value="&lt;div&gt;La arquitectura y distribución de la lógica del negocio en las diferentes capas de un proyecto pueden variar según la filosofía de diseño y las necesidades específicas del proyecto. Sin embargo, a continuación, te proporcionaré una recomendación general sobre dónde se puede desarrollar la lógica del negocio en cada capa que mencionaste:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Entity: La capa de entidades generalmente contiene clases que representan las estructuras de datos básicas del dominio del problema. Esta capa se enfoca principalmente en definir la estructura de los objetos que representan el modelo de negocio, pero no suele contener lógica compleja de negocio.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;IRepository: En esta capa, se definen interfaces para el acceso a datos, como lectura y escritura en la base de datos. La lógica en esta capa se limita a operaciones de persistencia de datos y consultas básicas.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DTO (Data Transfer Object): Esta capa se utiliza para definir objetos que se utilizan para transportar datos entre diferentes componentes del sistema. Aquí, no se suele poner lógica de negocio, ya que su función principal es ser una representación estructural de los datos.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;IService/Service: La capa de servicios es donde generalmente reside la lógica de negocio principal. Aquí es donde implementarías los algoritmos y operaciones que manipulan los datos y aplican las reglas del negocio. Los servicios actúan como intermediarios entre el controlador y el repositorio, encapsulando la lógica de negocio y permitiendo que los controladores sean más livianos y centrados en la gestión de las solicitudes HTTP.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Controller: La capa de controladores es la interfaz con el mundo exterior, generalmente a través de solicitudes HTTP o cualquier otro mecanismo de interfaz de usuario. En esta capa, se maneja principalmente la interacción con el cliente, la validación de datos de entrada, y la llamada a los servicios para ejecutar las operaciones del negocio.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Es esencial mantener la separación de responsabilidades en cada capa para lograr una arquitectura limpia y mantenible. La lógica del negocio debería residir principalmente en la capa de servicios para que pueda ser reutilizable y probada de manera independiente.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Recuerda que estas recomendaciones son generales y pueden variar según el enfoque y las necesidades específicas de cada proyecto. Algunas arquitecturas pueden optar por usar patrones como CQRS (Command Query Responsibility Segregation) o DDD (Domain-Driven Design) para estructurar aún más la lógica del negocio. Lo importante es mantener una arquitectura coherente y clara para que el código sea fácil de entender, extender y mantener.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="510" width="700" height="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

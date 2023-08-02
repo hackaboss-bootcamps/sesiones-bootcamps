@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2023-07-28T17:24:17.500Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="kyQ--JslQGFgJt7IjLhn" version="21.6.5" type="gitlab">
+  <diagram name="Page-1" id="OvvBkHu4FFX6_paxP3it">
+    <mxGraphModel dx="988" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F5sp22GXi29yo53iJrZk-1" value="Materia&lt;br&gt;&quot;Abstración del mundo real&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="660" y="120" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-2" value="Estudiante&lt;br&gt;&quot;Abstración del mundo real&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-4" value="Persona&lt;br&gt;&quot;Abstración del mundo real&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-5" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=-0.02;exitY=0.101;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="F5sp22GXi29yo53iJrZk-2" target="F5sp22GXi29yo53iJrZk-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="150" as="sourcePoint" />
+            <mxPoint x="530" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-6" value="Matricula&lt;br&gt;&quot;Abstración del mundo real&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="460" y="180" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-7" value="Objeto de una clase &amp;lt;&amp;lt;fruta&amp;gt;&amp;gt;&lt;br&gt;&amp;lt;&amp;lt;color, peso, tamanio, tipo&amp;gt;&amp;gt;&lt;br&gt;&lt;br&gt;Manzana, 220gr, grande, Fuji" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="220" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-8" value="&amp;lt;&amp;lt;agregación&amp;gt;&amp;gt;&lt;br&gt;&amp;lt;&amp;lt;composición&amp;gt;&amp;gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-9" value="Anotaciones&lt;br&gt;&lt;br&gt;Repository&lt;br&gt;Verbos REST&lt;br&gt;&lt;br&gt;Consultar material&lt;br&gt;FetchType.EAGER&lt;br&gt;Agregar matricula detalle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1520" width="175" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-10" value="Anotaciones JAVA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-11" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="400" as="sourcePoint" />
+            <mxPoint x="810" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-12" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="490" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-13" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="500" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-14" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="510" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-15" value="Identifican tareas repetitivas" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="220" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-17" value="También se puede construir la apliación desde cero o código totalmente propio del desarrollador" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="510" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-18" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="480" as="sourcePoint" />
+            <mxPoint x="290" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-19" value="Las anotaciones invocan un funcionalidad mediante una palabra reservada, @Palabra.&amp;nbsp;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="200" y="640" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.497;exitY=1.055;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="F5sp22GXi29yo53iJrZk-15" target="F5sp22GXi29yo53iJrZk-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="600" as="sourcePoint" />
+            <mxPoint x="210" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-21" value="&lt;div&gt;Las anotaciones son marcas especiales utilizadas en el código fuente de un programa Java (u otro lenguaje compatible con anotaciones) para proporcionar información adicional y metadatos al compilador o a tiempo de ejecución. En el contexto de JPA (Java Persistence API) y mapeo objeto-relacional, las anotaciones juegan un papel importante para definir cómo las clases y atributos Java se relacionan con las tablas y columnas de una base de datos relacional.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@Entity: La anotación @Entity se utiliza para marcar una clase Java como una entidad persistente, lo que significa que esta clase representa una tabla en una base de datos. Cada instancia de la clase se almacenará como una fila en la tabla correspondiente.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@Table: La anotación @Table se usa para especificar el nombre de la tabla en la base de datos a la que está asociada una entidad. Esto permite personalizar el nombre de la tabla si es diferente del nombre de la clase.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@Id: La anotación @Id se aplica a un atributo en la clase para marcarlo como la clave primaria (Primary Key) de la tabla. Cada entidad debe tener un atributo marcado con @Id para identificar de forma única cada registro en la tabla.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@Column: La anotación @Column se utiliza para mapear un atributo a una columna específica en la tabla de la base de datos. Permite personalizar el nombre de la columna si es diferente del nombre del atributo.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@ManyToOne: La anotación @ManyToOne se utiliza para establecer una relación de &quot;muchos a uno&quot; entre dos entidades. Se aplica a un atributo que representa una relación donde varias instancias de una entidad están relacionadas con una sola instancia de otra entidad.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@JoinColumn: La anotación @JoinColumn se usa junto con @ManyToOne para especificar la columna de la clave foránea (Foreign Key) en la tabla de la entidad actual que se utilizará para mantener la relación con la tabla de la entidad referenciada.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@GeneratedValue: La anotación @GeneratedValue se usa para indicar cómo se generará automáticamente el valor del atributo anotado, generalmente utilizado con atributos de clave primaria. Se puede configurar para que el valor sea generado por la base de datos (por ejemplo, autoincremental) o por estrategias específicas proporcionadas por JPA (como secuencias o UUID).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;En resumen, estas anotaciones son esenciales en el contexto de JPA para definir la estructura y las relaciones entre las clases Java y las tablas de la base de datos, facilitando el mapeo objeto-relacional y la persistencia de datos.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fuente: (ChatGPT, 2023)&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" vertex="1" parent="1">
+          <mxGeometry x="70" y="760" width="620" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-22" value="View&lt;br&gt;Frontend(Validación)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1400" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-23" value="API&lt;br&gt;Backend(Validación)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1400" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-24" value="Motor Base de Datos&lt;br&gt;SQL(Validación)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1400" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-25" value="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1530" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-26" value="2" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1530" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F5sp22GXi29yo53iJrZk-27" value="3" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1530" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

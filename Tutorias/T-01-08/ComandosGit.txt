@@ -1,0 +1,23 @@
+--Descargar git 
+https://git-scm.com/downloads
+
+
+1. 1. Primera vez
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+2. Clonar proyecto
+git clone https://github.com/ADSO-2694679/Sesion-2694679.git
+
+=====================
+***Siemrpe desde la raiz del repositorio**
+
+3. Obtener cambios del repositorio
+git pull
+
+4. Para obtener cambios y subir cambios.
+git pull
+git add -A 
+git commit -m "Mensaje informando qué se cambia"
+git push
+git pull
