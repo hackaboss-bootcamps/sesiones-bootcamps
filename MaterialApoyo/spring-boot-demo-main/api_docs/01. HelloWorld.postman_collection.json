@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "5beb3115-e01f-416d-8d52-c998636b2ffc",
+		"name": "01. HelloWorld",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28052554"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}",
+					"host": [
+						"{{controller_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salute",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}/salute",
+					"host": [
+						"{{controller_url}}"
+					],
+					"path": [
+						"salute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Farewell",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}/farewell",
+					"host": [
+						"{{controller_url}}"
+					],
+					"path": [
+						"farewell"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "controller_url",
+			"value": "{{base_url}}",
+			"type": "string"
+		}
+	]
+}

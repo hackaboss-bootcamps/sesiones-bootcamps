@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "c4445e7f-77e3-40e3-8ed3-d8f63d32303d",
+		"name": "02. Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28052554"
+	},
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}/add?num1=&num2=",
+					"host": [
+						"{{controller_url}}"
+					],
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": ""
+						},
+						{
+							"key": "num2",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{controller_url}}/add?num1=10&num2=20",
+							"host": [
+								"{{controller_url}}"
+							],
+							"path": [
+								"add"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "10"
+								},
+								{
+									"key": "num2",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Substract",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}/substract?num1=&num2=",
+					"host": [
+						"{{controller_url}}"
+					],
+					"path": [
+						"substract"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": ""
+						},
+						{
+							"key": "num2",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Substract",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{controller_url}}/substract?num1=10&num2=5",
+							"host": [
+								"{{controller_url}}"
+							],
+							"path": [
+								"substract"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "10"
+								},
+								{
+									"key": "num2",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Multiply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}/multiply?num1=&num2=",
+					"host": [
+						"{{controller_url}}"
+					],
+					"path": [
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": ""
+						},
+						{
+							"key": "num2",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Multiply",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{controller_url}}/multiply?num1=10&num2=5",
+							"host": [
+								"{{controller_url}}"
+							],
+							"path": [
+								"multiply"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "10"
+								},
+								{
+									"key": "num2",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Divide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{controller_url}}/divide?dividend=&divisor=",
+					"host": [
+						"{{controller_url}}"
+					],
+					"path": [
+						"divide"
+					],
+					"query": [
+						{
+							"key": "dividend",
+							"value": ""
+						},
+						{
+							"key": "divisor",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Divide",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{controller_url}}/divide?dividend=10&divisor=5",
+							"host": [
+								"{{controller_url}}"
+							],
+							"path": [
+								"divide"
+							],
+							"query": [
+								{
+									"key": "dividend",
+									"value": "10"
+								},
+								{
+									"key": "divisor",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Divide by zero",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{controller_url}}/divide?dividend=10&divisor=0",
+							"host": [
+								"{{controller_url}}"
+							],
+							"path": [
+								"divide"
+							],
+							"query": [
+								{
+									"key": "dividend",
+									"value": "10"
+								},
+								{
+									"key": "divisor",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "controller_url",
+			"value": "{{base_url}}/calculator",
+			"type": "string"
+		}
+	]
+}
