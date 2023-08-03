@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2023-08-03T15:21:44.190Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="f3FguDuzOs10Om3yXAVw" version="21.6.6" type="gitlab">
+  <diagram name="Page-1" id="ulFNaRE8bS0Qo-EwzaNs">
+    <mxGraphModel dx="546" dy="238" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-13" value="1. &lt;u&gt;&lt;font color=&quot;#ff392b&quot;&gt;Entity&lt;/font&gt;&lt;/u&gt;&lt;br&gt;2.&lt;font color=&quot;#ff392b&quot;&gt;&lt;u&gt; Repository&lt;/u&gt;&lt;/font&gt;&lt;br&gt;3.&lt;font color=&quot;#ff392b&quot;&gt; IService&lt;/font&gt;&lt;br&gt;4. &lt;font color=&quot;#ff0000&quot;&gt;Service&lt;/font&gt;&lt;br&gt;5. Controller&lt;br&gt;Proyectado DTO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="20" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IEstudianteRepository&amp;lt;Estudiante, Long&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;findOrderByNameStudent()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+findListByNameStudent(String&amp;nbsp;nameStudent&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="255" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-15" value="Estudiante" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="180" width="110" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-16" value="+ atributos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-15">
+          <mxGeometry y="26" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-15">
+          <mxGeometry y="52" width="110" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-18" value="+ metodos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-15">
+          <mxGeometry y="60" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;JpaRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="410" y="30" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=-0.014;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="xnV2_bwTBgFVFoZ8sQAT-14" target="xnV2_bwTBgFVFoZ8sQAT-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="170" as="sourcePoint" />
+            <mxPoint x="430" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-21" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IEstudianteService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+List&amp;lt;Estudiante&amp;gt; all()&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+Optional&amp;lt;Estudiante&amp;gt; findById(Long id)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+Estudiante save(Estudiante estudiante)&lt;/font&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;+void update(Estudiante estudiante)&lt;br&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+void delete(Long Id)&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+List&amp;lt;Estudiante&amp;gt;findOrderByNameStudent()&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; font-size: 8px;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;+List&amp;lt;Estudiante&amp;gt;findListByNameStudent(String&amp;nbsp;nameStudent&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="430" y="320" width="232.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-22" value="EstudianteService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="372" width="230" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-23" value="- repository: IEstudianteRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-22">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-22">
+          <mxGeometry y="52" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-25" value="+ @override 100%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-22">
+          <mxGeometry y="60" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-26" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xnV2_bwTBgFVFoZ8sQAT-25" target="xnV2_bwTBgFVFoZ8sQAT-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="300" y="390" as="sourcePoint" />
+            <mxPoint x="460" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-28" value="ContrllerService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="490" width="230" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-29" value="- service: IEstudianteService" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-28">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-28">
+          <mxGeometry y="52" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-31" value="endpoint {API}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="xnV2_bwTBgFVFoZ8sQAT-28">
+          <mxGeometry y="60" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-32" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="610" as="sourcePoint" />
+            <mxPoint x="720" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-34" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;API:&amp;nbsp;interfaz de programación de aplicaciones&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ruta:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Protocolo: http/https&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Server: ip - localhost&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Port: 8080 8000 8081 &lt;font color=&quot;#ff5226&quot;&gt;9090 9000 9001&lt;/font&gt; //Verificar la disponibilidad&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;EndPoint: nombre del controller -&amp;gt; tenga el nombre del entity&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;EndPoints Service: nombres especificos generados.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#ff6112&quot;&gt;http://localhost:9000/Estudiante&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="620" width="600" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-35" value="&lt;div&gt;A continuación, te menciono algunos puertos recomendados para usar en la construcción de una aplicación Spring Boot:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Puerto 8080: Es el puerto más comúnmente utilizado para aplicaciones web en Spring Boot. Si no se especifica ningún puerto en la configuración, Spring Boot utilizará el puerto 8080 de forma predeterminada.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Puerto 8000: También es un puerto popular para aplicaciones web y es comúnmente utilizado como alternativa al 8080.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Puerto 9090: Otro puerto comúnmente utilizado para aplicaciones web, especialmente si el 8080 ya está en uso por otra aplicación.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Puertos en el rango 9000-9999: En ocasiones, los desarrolladores eligen puertos en este rango si los puertos anteriores ya están ocupados o si desean organizar los puertos de sus aplicaciones de manera más estructurada.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="790" width="500" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-36" value="API:&amp;nbsp;&lt;br&gt;Una API responde a peticiones de los verbos HTTP&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GET =&amp;gt; Obtener o consultar&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;POST =&amp;gt; Agregar nuevo registro&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;PUT =&amp;gt; Actualidar registro&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DELETE =&amp;gt; Elimianar registro&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1110" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xnV2_bwTBgFVFoZ8sQAT-37" value="STATUS DE LOS VERBOS HTTP:&amp;nbsp;&lt;br&gt;Indicar que ha sucedido con la petición HTTP&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;100 =&amp;gt; Informativos&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;200 =&amp;gt; Ejecución con éxito&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;300 =&amp;gt; Redireccionamiento&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;400 =&amp;gt; Error de accceso por del cliente&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;500 =&amp;gt; Error de servidor&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1230" width="380" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
