@@ -1,0 +1,52 @@
+-----------------
+Tabla: Continente
+id (PK)
+nombre
+-----------------
+Tabla: País
+id (PK)
+nombre
+continente_id (FK hacia Continente)
+-----------------
+Tabla: Estado (o Provincia)
+id (PK)
+nombre
+país_id (FK hacia País)
+-----------------
+Tabla: Ciudad
+id (PK)
+código_postal
+nombre
+estado_id (FK hacia Estado)
+-----------------
+
+Nota:
+Cada continente puede tener varios países.
+------------------------------------------
+Cada país pertenece a un continente específico.
+Cada país puede tener varios estados o provincias.
+------------------------------------------
+Cada estado o provincia pertenece a un país específico.
+Cada estado o provincia puede tener varias ciudades.
+------------------------------------------
+Cada ciudad pertenece a un estado o provincia específico.
+
+Planteamiento:
+
+
++----+--------+     +----+----------+
++  Continente |     + Pais          | 
++----+--------+     +----+----------+ 
+| id          |     | id            |  
+| nombre      |     | nombre        |    
++----+--------+     | continente_id |    
+                    +----+----------+  
+					
++----+------+   +----+----------+
++  Estado 	|   + Ciudad        | 
++----+------+   +----+----------+ 
+| id       	|   | id            |  
+| nombre  	|   | nombre        |    
+| pais_id   |   | codigo_postal |    
++----+------+   | estado_id     |    
+				+----+----------+  
