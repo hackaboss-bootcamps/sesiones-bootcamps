@@ -1,0 +1,76 @@
+@Column(name="estado")
+private Boolean Estado;
+@Column(name = "fecha_creacion", nullable = false)
+@CreationTimestamp
+private LocalDateTime fechaCreacion;
+@Column(name = "fecha_modificacion", nullable = true)
+@UpdateTimestamp
+private LocalDateTime fechaModificacion;
+@Column(name = "fecha_eliminacion", nullable = true)
+private LocalDateTime fechaEliminacion;
+@Column(name = "usuario_creacion", nullable = false)
+private Long usuarioCreacionId;
+@Column(name = "usuario_modificacion", nullable = true)
+private Long usuarioModificacionId;
+@Column(name = "usuario_eliminacion", nullable = true)
+private Long usuarioEliminacionId;
+
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
+
+@Column(name = "nombre", length = 50)
+private String nombre;
+	
+	
+@ManyToOne(fetch = FetchType.EAGER, optional = false)
+@JoinColumn(name = "provincia_id", nullable = false)
+private Provincia provinciaId;
+
+
+server.port= 9000
+spring.jpa.hibernate.ddl-auto = create-drop 
+spring.datasource.url = jdbc:mysql://localhost:3306/prueba
+spring.datasource.username = root
+spring.datasource.password =
+
+
+
+=========================
+Conclusión: Realizar un nivel de abstracción a mayor profundidad facilita la reutilización de código. No obstante, al realizar el análisis de la abstracción con un mal enfoque, causaría un error en cascada sobre el proyecto.
+
+¿Cómo se prodría al heredar los atributos de una super class, hacer que la clase hija pueda personalizar los atributos "Ejemplo @Column" - "Metadatos JPA" - "jpaMetamodelMappingContext"?
+
+Hibernate mediante spring boot solo requiere actualizar la dependencia que esta estipulada en el archivo pom.xml y la respectiva configuración el el archivo application.properties para lograr {create-drop, create, update, validate, none} en los diferentes motores de base de datos SQL - Relacionales {h2, mysql, postgresql, oracle, sqlite, db2...}. Esto se logra por el Hibernate y JPA. 
+
+Código: 
+
+application.properties
+----------------------
+server.port= 9000
+spring.jpa.hibernate.ddl-auto = create-drop 
+spring.datasource.url = jdbc:h2:tcp://localhost/~/test
+spring.datasource.username = sa
+spring.datasource.password =
+
+pom.xml
+-------
+<dependency>
+	<groupId>com.h2database</groupId>
+	<artifactId>h2</artifactId>
+	<scope>runtime</scope>
+</dependency>
+
+======================================
+Hay una anotación a nivel de clase hija...
+
+@AttributeOverrides({
+    @AttributeOverride(name="name", column=@Column(name="FULLNAME")),
+    @AttributeOverride(name="startDate", column=@Column(name="SDATE"))
+})
+
+http://www.java2s.com/Tutorial/Java/0355__JPA/SubclassWithAttributeOverrides.htm
+
+
+
