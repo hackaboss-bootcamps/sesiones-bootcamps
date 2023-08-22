@@ -1,0 +1,26 @@
+********
+¿Cómo controlar los envios de los producitos, conocer en tiempo real la ubicación o seguimiento del mismo?
+
+Controlar los envios de un producto
+Seguridad{Persona, Usuario, Rol, Vistas, Vistas del Rol}
+Negocio{Cliente, Factura, Factura Linea, Producto, Segimiento}
+Ubicacion{Continente, Pais, Proivincia, Ciudad}
+
+
+================================
+Aqui todo el código del ejercicio hecho durante la tutoria https://gitlab.com/blueoceanstart/hack-a-boss/jvb01cg/backend-java/-/tree/main/Tutorias/T-09-08
+
+
+********
+¿IEEE 830?  
+(
+ RF=>Requerimientos funcionales
+ NRF=> Requerimientos no funcionales
+)
+
+SRS => Especificación de requerimientos de software
+
+*Definir los requerimientos[medible, alcanzable, no ambiguo y en un lenguaje no técnico]
+
+Requerimientos->[backend - modelo relacional - frontend - uml]
+

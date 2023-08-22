@@ -1,0 +1,19 @@
+Capacidad:
+Rendimiento: 
+Seguridad:
+
+
+SQL:
+	Restricciones[pk - fk]
+	Tiempo de respuesta*** menos eficiente
+	Almacenamiento *** menos eficiente
+	Lengueje SQL=> Lenguaje estructurado de consulta
+NOSQL:
+	Flexible
+	Tiempo: Más eficiente
+	Almacenamiento *** Màs eficiente
+	Datos en formato JSON
+	
+Conclusión: 
+	La elección del motor de base de datos depende de la necesidad del proyecto. 
+
