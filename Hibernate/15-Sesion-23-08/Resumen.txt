@@ -1,0 +1,104 @@
+********
+¿Cómo controlar los envios de los productos, conocer en tiempo real la ubicación o seguimiento del mismo?
+
+Controlar los envios de un producto
+Seguridad{Persona, Usuario, Rol, Vistas, Vistas del Rol}
+Negocio{Cliente, Factura, Factura Linea, Producto, Segimiento}
+Ubicacion{Continente, Pais, Proivincia, Ciudad}
+
+======================================
+Instalación MYSQL{local-nube}
+Mongo: {nube}
+======================================
+1. Definir requerimientos. (5:00)
+
+
+* Generara la CRUD[Create, Reading, Update, Delete] para todas las entidades.
+* Tipos de relaciones{1:1, 1:n, n:m[pivote]}
+* Para el caso de D[Delete, invocar verbo PUT[borrado lógico]
+* Para el caso de D[Delete], y de invocar verbo DELETE[evaluar la pertinencia y las restricciones asociadas - borrado físico]
+
+Nota: Establezca los atributos específicos para cada entidad.
+
+===========================================
+Atributos genéricos
+-------------------
+id [IdentificadorId]
+-------------------
+nombre [IdentificadorNombre]
+-------------------
+activo [AuditoriaActivo]
+-------------------
+[AuditoriaFecha]
+fecha_creacion
+fecha_modificacion
+fecha_eliminacion 
+-------------------
+[AuditoriaUsuario]
+usuario_creacion
+usuario_modificacion
+usuario_eliminacion
+
+===========================================
+Modulo Seguridad
+=> Al autenticarme con usuario y contraseña el sistema me debe mostrar únicamente las vistas asociadas a mi rol.
+=> Crear nuevos roles en el sistema y a su vez asignarles los persmiso que el adminstrador determine para este este. 
+Seguridad
+========
+Authenticacion => el usuario existe para acceder
+Authorizacion => tiene roles para acceder a partes del sistema
+
+*Persona
+	Permitir la gestión de tipo documento, documento, primer nombre, segundo nombre, primer apellido, segundo nombre, correo, teléfono, dirección.
+	Restricciones: 
+	* No se permite duplicar el número de documento.
+	* Datos permitidos nulos: Segundo nombre, segundo apellido, teléfono
+	* Genérico: 
+		[IdentificadorId]
+		[AuditoriaActivo]
+		[AuditoriaFecha]
+		[AuditoriaUsuario]
+*Usuario
+	Permitir la gestión de nombre usuario, contraseña
+	Asociar una única persona a un usuario[1:1 => unique]
+	Asociar una único rol al usuario[1:1 => unique]
+	Restricciones:
+	*La persona debe estar previamente creada para poder asociarle un usuario.
+	* Genérico: 
+		[IdentificadorId]
+		[AuditoriaActivo]
+		[AuditoriaFecha]		
+*Rol
+	*Permitir la gestión [IdentificadorNombre]
+	Retricciones:
+	*No se permite duplicar el [IdentificadorNombre]=>unique
+	* Genérico: 
+		[IdentificadorId]
+		[AuditoriaActivo]
+		[AuditoriaFecha]
+		[AuditoriaUsuario]
+*Vista
+	*Permitir la gestión de la ruta, la etiqueta y el [IdentificadorNombre]
+	Retricciones:
+	*No se permite duplicar ruta, la etiqueta y el [IdentificadorNombre]
+	* Genérico: 
+		[IdentificadorId]
+		[AuditoriaActivo]
+		[AuditoriaFecha]
+		[AuditoriaUsuario]
+*VistaRol
+	*Cada rol puede tener n cantidad de vistas.
+	*Cada vista puede pertenecer a n cantidad de roles
+	Restricciones: 
+	* Un rol no puede tener más de una véz la misma vista
+	* Una vista no puede tener más de una véz el mismo rol
+	* Genérico: 
+		[IdentificadorId]
+		[AuditoriaActivo]
+
+===========================================
+Modulo Negocio
+
+===========================================
+Modulo de envio
+
