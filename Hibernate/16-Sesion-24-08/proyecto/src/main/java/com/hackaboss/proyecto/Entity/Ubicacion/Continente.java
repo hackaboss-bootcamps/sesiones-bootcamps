@@ -1,8 +1,6 @@
-package com.hackaboss.proyecto.Entity;
+package com.hackaboss.proyecto.Entity.Ubicacion;
 
 import com.hackaboss.proyecto.Entity.Component.Auditoria;
-import com.hackaboss.proyecto.Entity.Component.IdentificadorActivo;
-import com.hackaboss.proyecto.Entity.Component.IdentificadorId;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

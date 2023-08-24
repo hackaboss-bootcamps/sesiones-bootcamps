@@ -1,4 +1,4 @@
-package com.hackaboss.proyecto.Entity;
+package com.hackaboss.proyecto.Entity.Ubicacion;
 
 import com.hackaboss.proyecto.Entity.Component.Auditoria;
 
