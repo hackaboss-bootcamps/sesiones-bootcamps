@@ -1,0 +1,44 @@
+=================
+Proyecto
+---------
+Backend : Calificación
+---------
+Frontend(html - css | ajax) | Opcional
+
+---------
+Se entrega requerimientos **
+Beca: 250 Euros ** Para cada uno (Aprobar módulos + Proyecto)
+Calendario 4-21 ** 
+Individual?Revisar
+---------
+Temas de ocupación
+
+---------
+Temario pendiente
+Security
+testing
+.jar
+una semana
+=================
+
+
+****
+DTO
+Page
+Swagger
+****
+Seguridad
+Ubicacion
+Negocio*****
+******
+
+Swagger para SpringBoot 2.5+ mediante OpenApi
+https://www.baeldung.com/spring-rest-openapi-documentation
+
+
+
+========================================================
+****Entidades
+Seguridad Personas ** (Pendiente: Usuario, Rol, Vista, VistaRol)
+Ubicacion ** OK 
+Negocio: Pendiente todas
