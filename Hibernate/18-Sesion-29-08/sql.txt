@@ -1,0 +1,21 @@
+create database proyecto;
+
+--
+SELECT * FROM usuario;
+
+
+-- Mostrar los datos del formulario usuario.
+-- usuario, contrasenia[****], persona, activo
+use proyecto;
+SELECT 
+	u.id AS id,
+	u.usuario,
+    '****' AS contrasenia,
+    p.id AS personaId,
+    concat(p.primer_nombre,' ',p.segundo_nombre,' ',p.primer_apellido,' ',p.segundo_apellido) AS persona,
+    r.id AS rolId,
+    r.nombre AS rol
+FROM 
+	usuario u
+    INNER JOIN persona p ON u.persona_id = p.id
+    INNER JOIN rol r ON u.rol_id = r.id

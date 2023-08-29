@@ -1,0 +1,54 @@
+Tiempo: 3 semanas
+Sesión sincrónica por equipo: 1 hora. (Lunes)
+Sesión tutoría: L-J=> 15:30 - 20:30
+
+Entrega del reto:
+	Asignación: Lunes 04-09
+	Entrega: Esperado (21-09) | Máximo (24-09)
+
+Requerimientos
+	Equipo: Recibe el reto con los respectivos requerimientos funcionales. (Obligatorios - Deseados[Opcionales])
+
+Entrega
+	Documentación: (Requerimientos, modelado, backend, manuales)
+================================================================
+Frontend: No se realiza.
+Se entrega al finalizar un ejemplo funcional.
+
+
+=======================================
+Validar horario -> Habilidades y Competencias para la Empleabilidad TIC
+Tutoría individual?Team
+
+=============================0
+{
+	"usuario":"pepito23",
+	"contrasenia:"dfgkjfdgkflg",
+	"personaId"{
+		"tipoDocumento":"DNI",
+		"documento":"6753478534"
+	}
+}
+
+=====================================
+Disminuir el tamaño
+Rendimiento
+
+Persona => Clase es el 100% de los atributos de esta.
+persona => Objeto es el 100% de la información de un elemento
+
+private String id;
+private String {fechas, usuarios, activo};
+private String tipoDocumento;
+private String documento;
+private String primerNombre;
+private String segundoNombre;
+private String primerApellido;
+private String segundoApellido;
+private String correo;
+private String telefono;
+private String direccion;
+
+
+=> 
+	
