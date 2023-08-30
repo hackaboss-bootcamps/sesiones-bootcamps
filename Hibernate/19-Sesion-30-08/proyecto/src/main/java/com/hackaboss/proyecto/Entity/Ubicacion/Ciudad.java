@@ -14,7 +14,6 @@ public class Ciudad extends Auditoria {
     @JoinColumn(name = "provincia_id", nullable = false)
     private Provincia provinciaId;
 
-
     public String getNombre() {
         return nombre;
     }
