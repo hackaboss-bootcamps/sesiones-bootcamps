@@ -1,0 +1,50 @@
+Controller: 
+@GetMapping("/datatable")
+public ResponseEntity<ApiResponseDto<Page<?>>> datatable(@RequestParam(name = "page") Integer page,
+		@RequestParam(name = "size") Integer size,
+		@RequestParam(name = "column_order") String columnOrder,
+		@RequestParam(name = "column_direction") String columnDirection,
+		@RequestParam(name = "search", required = false) String search,
+		@RequestParam(name = "foreignkey") Long quoteId) {
+	try {
+		List<Order> orders = new ArrayList<>();
+
+		orders.add(new Order(columnDirection == "asc" ? Direction.ASC : Direction.DESC, columnOrder));
+
+		return ResponseEntity.ok(new ApiResponseDto<Page<?>>("Datos obtenidos",
+				service.getDatatable(PageRequest.of(page, size, Sort.by(orders)), search, quoteId), true));
+	} catch (Exception e) {
+		return ResponseEntity.internalServerError().body(new ApiResponseDto<Page<?>>(e.getMessage(), null, false));
+	}
+}
+	
+Servicio
+@Override
+public Page<IEmployeeDto> getDatatable(Pageable pageable, String search) {
+	return this.repository.getDatatable(pageable, search);
+}
+
+IService
+Page<D> getDatatable(Pageable pageable, String search);
+
+IRepository
+@Query(value = " SELECT id, name, state "
+				 + " FROM parameter.payment_method "
+			     + " WHERE deleted_at IS NULL AND UPPER(CONCAT(name, state)) "
+				 + " LIKE CONCAT('%', UPPER(:search), '%') ", nativeQuery = true)
+Page<IPaymentMethodDto> getDatatable(Pageable pageable, @Param("search") String search);
+
+@Query(value = " SELECT "
+				 + "	pe.id, "
+				 + "	dt.name AS documentType, "
+				 + "	pe.document_number AS documentNumber, "
+				 + "	pe.name, "
+				 + "	pe.surname, "
+				 + "	pe.mail, "
+				 + "	pe.gender, "
+				 + "	pe.state "
+				 + " FROM parameter.people pe "
+				 + " INNER JOIN parameter.document_type dt ON dt.id = pe.document_type_id"
+				 + " WHERE pe.deleted_at is null and UPPER(CONCAT(dt.name,pe.document_number,pe.name,pe.surname,pe.mail,pe.gender)) " 
+				 + " LIKE CONCAT('%', UPPER(:search), '%') ", nativeQuery = true)
+	Page<IPeopleDto> getDatatable(Pageable pageable, @Param("search") String search);
