@@ -11,24 +11,24 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-@Service
-public class BaseService <T extends Auditoria> implements IBaseService<T> {
-    @Autowired
-    protected IBaseRepository<T, Long> repositoryBaseModel;
+
+public abstract class BaseService<T extends Auditoria> implements IBaseService<T> {
+
+    protected abstract IBaseRepository<T, Long> getRepository();
 
     @Override
     public List<T> all() {
-        return repositoryBaseModel.findAll();
+        return getRepository().findAll();
     }
 
     @Override
     public List<T> findByStateTrue() {
-        return repositoryBaseModel.findAll();
+        return getRepository().findAll();
     }
 
-    @Override
+	@Override
     public T findById(Long id) throws Exception {
-        Optional<T> op = repositoryBaseModel.findById(id);
+        Optional<T> op = getRepository().findById(id);
 
         if (op.isEmpty()) {
             throw new Exception("Registro no encontrado");
@@ -38,14 +38,14 @@ public class BaseService <T extends Auditoria> implements IBaseService<T> {
     }
 
     @Override
-    public T save(T entity) throws Exception {
+    public T save(T entity) throws Exception{
         entity.setFechaCreacion(LocalDateTime.now());
-        return repositoryBaseModel.save(entity);
+        return getRepository().save(entity);
     }
 
     @Override
     public void update(Long id, T entity) throws Exception {
-        Optional<T> op = repositoryBaseModel.findById(id);
+        Optional<T> op = getRepository().findById(id);
 
         if (op.isEmpty()) {
             throw new Exception("Registro no encontrado");
@@ -55,14 +55,13 @@ public class BaseService <T extends Auditoria> implements IBaseService<T> {
 
         String[] ignoreProperties = {"id"};
         BeanUtils.copyProperties(entity, entityUpdate,ignoreProperties);
-
         entityUpdate.setFechaModificacion(LocalDateTime.now());
-        repositoryBaseModel.save(entityUpdate);
+        getRepository().save(entityUpdate);
     }
 
     @Override
     public void delete(Long id) throws Exception {
-        Optional<T> op = repositoryBaseModel.findById(id);
+        Optional<T> op = getRepository().findById(id);
 
         if (op.isEmpty()) {
             throw new Exception("Registro no encontrado");
@@ -71,6 +70,6 @@ public class BaseService <T extends Auditoria> implements IBaseService<T> {
         T entityUpdate = op.get();
         entityUpdate.setFechaEliminacion(LocalDateTime.now());
 
-        repositoryBaseModel.save(entityUpdate);
+        getRepository().save(entityUpdate);
     }
 }

@@ -4,7 +4,7 @@ import com.hackaboss.proyecto.Entity.Component.Auditoria;
 import java.util.List;
 
 public interface IBaseService <T extends Auditoria> {
-    List<T> all();
+	List<T> all();
     List<T> findByStateTrue();
     T findById(Long id) throws Exception;
     T save(T entity) throws Exception;
