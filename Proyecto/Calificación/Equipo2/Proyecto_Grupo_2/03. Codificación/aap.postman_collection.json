@@ -1,0 +1,3821 @@
+{
+	"info": {
+		"_postman_id": "611ff5e6-6bbb-47fa-ab11-4b4b7e7b51b1",
+		"name": "Tienda Pepito Perez",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28996363"
+	},
+	"item": [
+		{
+			"name": "Empleado",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Empleado por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Empleado por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/NO?nombre=Nombre2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "Nombre2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Empleado por Direccion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/DI?direccion=Direccion2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"DI"
+									],
+									"query": [
+										{
+											"key": "direccion",
+											"value": "Direccion2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Empleado por Provincia",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/PR?provincia=Provincia2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"PR"
+									],
+									"query": [
+										{
+											"key": "provincia",
+											"value": "Provincia2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Empleado por Poblacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/PO?poblacion=Poblacion2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"PO"
+									],
+									"query": [
+										{
+											"key": "poblacion",
+											"value": "Poblacion2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Empleado por Cod Postal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/CP?codPostal=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"CP"
+									],
+									"query": [
+										{
+											"key": "codPostal",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Empleado por EMail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado/EM?email=email2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado",
+										"EM"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "email2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dni\": \"1aab\",\r\n    \"nombre\": \"Nombre Save\",\r\n    \"apellido1\": \"Apellido  Save\",\r\n    \"apellido2\": \"Apellido  Save\",\r\n    \"direccion\": \"Dirección  Save\",\r\n    \"provincia\": \"Provincia  Save\",\r\n    \"poblacion\": \"Poblacion  Save\",\r\n    \"codPostal\": \"CodS\",\r\n    \"email\": \"EMail  Save\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/empleado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dni\": \"11zzzzz\",\r\n    \"nombre\": \"Nombre Update 3\",\r\n    \"apellido1\": \"Apellido  Save\",\r\n    \"apellido2\": \"Apellido  Save\",\r\n    \"direccion\": \"Dirección  Save\",\r\n    \"provincia\": \"Provincia  Save\",\r\n    \"poblacion\": \"Poblacion  Save\",\r\n    \"codPostal\": \"CodS\",\r\n    \"email\": \"EMail  Save\"\r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/empleado?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/empleado?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"empleado"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Cliente por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Dni",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/DN?dni=1a2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"DN"
+									],
+									"query": [
+										{
+											"key": "dni",
+											"value": "1a2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/NO?nombre=Nombre2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "Nombre2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Direccion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/DI?direccion=Direccion2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"DI"
+									],
+									"query": [
+										{
+											"key": "direccion",
+											"value": "Direccion2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Provincia",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/PR?provincia=Provincia2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"PR"
+									],
+									"query": [
+										{
+											"key": "provincia",
+											"value": "Provincia2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Poblacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/PO?poblacion=Poblacion2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"PO"
+									],
+									"query": [
+										{
+											"key": "poblacion",
+											"value": "Poblacion2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Cod Postal",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/CP?codPostal=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"CP"
+									],
+									"query": [
+										{
+											"key": "codPostal",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por EMail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/EM?email=email2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"EM"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "email2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dni\": \"1aab\",\r\n    \"nombre\": \"Nombre Save\",\r\n    \"apellido1\": \"Apellido  Save\",\r\n    \"apellido2\": \"Apellido  Save\",\r\n    \"direccion\": \"Dirección  Save\",\r\n    \"provincia\": \"Provincia  Save\",\r\n    \"poblacion\": \"Poblacion  Save\",\r\n    \"codPostal\": \"CodS\",\r\n    \"email\": \"EMail  Save\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/cliente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "save Lista",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"dni\": \"2zzzzz\",\r\n        \"nombre\": \"Nombre Save\",\r\n        \"apellido1\": \"Apellido  Save\",\r\n        \"apellido2\": \"Apellido  Save\",\r\n        \"direccion\": \"Dirección  Save\",\r\n        \"provincia\": \"Provincia  Save\",\r\n        \"poblacion\": \"Poblacion  Save\",\r\n        \"codPostal\": \"CodS\",\r\n        \"email\": \"EMail  Save\"\r\n    },\r\n    {\r\n        \"dni\": \"3zzzzz\",\r\n        \"nombre\": \"Nombre Save\",\r\n        \"apellido1\": \"Apellido  Save\",\r\n        \"apellido2\": \"Apellido  Save\",\r\n        \"direccion\": \"Dirección  Save\",\r\n        \"provincia\": \"Provincia  Save\",\r\n        \"poblacion\": \"Poblacion  Save\",\r\n        \"codPostal\": \"CodS\",\r\n        \"email\": \"EMail  Save\"\r\n    },\r\n    {\r\n        \"dni\": \"4zzzzz\",\r\n        \"nombre\": \"Nombre Save\",\r\n        \"apellido1\": \"Apellido  Save\",\r\n        \"apellido2\": \"Apellido  Save\",\r\n        \"direccion\": \"Dirección  Save\",\r\n        \"provincia\": \"Provincia  Save\",\r\n        \"poblacion\": \"Poblacion  Save\",\r\n        \"codPostal\": \"CodS\",\r\n        \"email\": \"EMail  Save\"\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/cliente/SAL",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente",
+										"SAL"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dni\": \"11zzzzz\",\r\n    \"nombre\": \"Nombre Update 3\",\r\n    \"apellido1\": \"Apellido  Save\",\r\n    \"apellido2\": \"Apellido  Save\",\r\n    \"direccion\": \"Dirección  Save\",\r\n    \"provincia\": \"Provincia  Save\",\r\n    \"poblacion\": \"Poblacion  Save\",\r\n    \"codPostal\": \"CodS\",\r\n    \"email\": \"EMail  Save\"\r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/cliente?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/cliente?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"cliente"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Familia Producto",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Familia por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/fproducto/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"fproducto",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Familia por Id Familia Padre",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/fproducto/FA?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"fproducto",
+										"FA"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Familia por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/fproducto/NO?nombre=Producto2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"fproducto",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "Producto2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"nombre\": \"FamiliaProducto 12\",\r\n    \"familiaPadre\": null,\r\n    \"fechaEliminacion\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/fproducto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"fproducto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"FamiliaProducto 3\",\r\n    \"familiaPadre\": null,\r\n    \"fechaEliminacion\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/fproducto?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"fproducto"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/fproducto?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"fproducto"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Producto por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/producto/ID?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/NO?nombre=producto2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "producto2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por Cod Barras",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/CB?codBarras=cod2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"CB"
+									],
+									"query": [
+										{
+											"key": "codBarras",
+											"value": "cod2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por Cantidad",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/CA?cantidadInicio=1&cantidadFin=100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"CA"
+									],
+									"query": [
+										{
+											"key": "cantidadInicio",
+											"value": "1"
+										},
+										{
+											"key": "cantidadFin",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por Precio",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/PR?precioUnitarioInicio=1&precioUnitarioFin=100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"PR"
+									],
+									"query": [
+										{
+											"key": "precioUnitarioInicio",
+											"value": "1"
+										},
+										{
+											"key": "precioUnitarioFin",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por IVA",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/IV?ivaInicio=1&ivaFin=22",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"IV"
+									],
+									"query": [
+										{
+											"key": "ivaInicio",
+											"value": "1"
+										},
+										{
+											"key": "ivaFin",
+											"value": "22"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por Familia Producto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/FA?familiaProducto=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"FA"
+									],
+									"query": [
+										{
+											"key": "familiaProducto",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto por Observaciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto/OB?observaciones=22",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto",
+										"OB"
+									],
+									"query": [
+										{
+											"key": "observaciones",
+											"value": "22"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"codBarras\": \"cod1212\",\r\n    \"nombre\": \"producto1212\",\r\n    \"familiaProducto\": {\r\n        \"id\": 2\r\n    },\r\n    \"precioUnitario\": 2.0,\r\n    \"cantidad\": 121212,\r\n    \"iva\": 20,\r\n    \"observaciones\": \"observaciones nuevo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/producto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codBarras\": \"cod33333\",\r\n    \"nombre\": \"producto3\",\r\n    \"familiaProducto\": {\r\n        \"id\": 2\r\n    },\r\n    \"precioUnitario\": 3.0,\r\n    \"cantidad\": 3,\r\n    \"iva\": 21,\r\n    \"observaciones\": \"observaciones3\",\r\n    \"fechaEliminacion\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/producto?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/producto?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"producto"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Forma Pago",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Forma Pago por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/formapago/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"formapago",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forma Pago  por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/formapago/NO?nombre=efec",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"formapago",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "efec"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forma Pago Todas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/formapago/AL",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"formapago",
+										"AL"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Factura",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Factura por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/ID?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por Cliente",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/CL?idCliente=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"CL"
+									],
+									"query": [
+										{
+											"key": "idCliente",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por Fecha",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/factura/FE?fechaInicio=2023-02-10&fechaFin=2023-12-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"FE"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-02-10"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-12-10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por FormaPago",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/factura/FP?formaPago=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"FP"
+									],
+									"query": [
+										{
+											"key": "formaPago",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por Observaciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/factura/OB?observaciones=Observaciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"OB"
+									],
+									"query": [
+										{
+											"key": "observaciones",
+											"value": "Observaciones"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura Extendida por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/FEXTID?id=23",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"FEXTID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "23"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura Aplicar Participacion",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/APA?idFactura=2&idParticipacion=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"APA"
+									],
+									"query": [
+										{
+											"key": "idFactura",
+											"value": "2"
+										},
+										{
+											"key": "idParticipacion",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numero\": 4,\r\n    \"observaciones\": \"Observaciones4\",\r\n    \"formaPago\": {\r\n        \"id\": 2,\r\n        \"nombre\": \"Tarjeta Crédito\"\r\n    },\r\n    \"cliente\": {\r\n        \"id\": 2,\r\n        \"dni\": \"1a2\",\r\n        \"nombre\": \"Nombre2\",\r\n        \"apellido1\": \"Apellido12\",\r\n        \"apellido2\": \"Apellido22\",\r\n        \"direccion\": \"Dirección2\",\r\n        \"provincia\": \"Provincia2\",\r\n        \"poblacion\": \"Poblacion2\",\r\n        \"codPostal\": \"Cod2\",\r\n        \"email\": \"EMail2\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Generar Factura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"observaciones\": \"Observaciones9\",\r\n    \"formaPago\": {\r\n        \"id\": 2,\r\n        \"nombre\": \"Tarjeta Crédito\"\r\n    },\r\n    \"cliente\": {\r\n        \"id\": 2,\r\n        \"dni\": \"1a2\",\r\n        \"nombre\": \"Nombre2\",\r\n        \"apellido1\": \"Apellido12\",\r\n        \"apellido2\": \"Apellido22\",\r\n        \"direccion\": \"Dirección2\",\r\n        \"provincia\": \"Provincia2\",\r\n        \"poblacion\": \"Poblacion2\",\r\n        \"codPostal\": \"Cod2\",\r\n        \"email\": \"EMail2\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/GF",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"GF"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/factura?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Compuestas",
+					"item": [
+						{
+							"name": "Generar Factura Extendida",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"dtoPorcentaje\": 0,\r\n    \"formaPago\": {\r\n        \"id\": 2\r\n    },\r\n    \"cliente\": {\r\n        \"id\": 3\r\n    },\r\n    \"detalleFactura\": [\r\n        {\r\n            \"producto\": {\r\n                \"id\": 1\r\n            },\r\n            \"cantidad\": 22,\r\n            \"precioUnitario\": 5.0,\r\n            \"dtoPorcentaje\": 0,\r\n            \"iva\": 21\r\n        },\r\n        {\r\n            \"producto\": {\r\n                \"id\": 6\r\n            },\r\n            \"cantidad\": 3,\r\n            \"precioUnitario\": 6.0,\r\n            \"dtoPorcentaje\": 0,\r\n            \"iva\": 21\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/factura/GFE",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"factura",
+										"GFE"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Factura Simplificada",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Factura por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/ID?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por Numero",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/NU?numero=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"NU"
+									],
+									"query": [
+										{
+											"key": "numero",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por Fecha",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/FE?fechaInicio=2023-02-10&fechaFin=2023-12-10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"FE"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-02-10"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-12-10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por FormaPago",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/FP?formaPago=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"FP"
+									],
+									"query": [
+										{
+											"key": "formaPago",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura por Observaciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/OB?observaciones=Observaciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"OB"
+									],
+									"query": [
+										{
+											"key": "observaciones",
+											"value": "Observaciones"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Factura Extendida por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/FEXTID?id=14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"FEXTID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "14"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numero\": 4,\r\n    \"observaciones\": \"Observaciones4\",\r\n    \"formaPago\": {\r\n        \"id\": 2,\r\n        \"nombre\": \"Tarjeta Crédito\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Generar Factura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"observaciones\": \"Observaciones9\",\r\n    \"formaPago\": {\r\n        \"id\": 2,\r\n        \"nombre\": \"Tarjeta Crédito\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/GF",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"GF"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Compuestas",
+					"item": [
+						{
+							"name": "Generar Factura Extendida",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"dtoPorcentaje\": 0,\r\n    \"observaciones\": \"Observaciones Factura Extendida\",\r\n    \"formaPago\": {\r\n        \"id\": 2\r\n    },\r\n    \"detalleFacturaSimplificada\": [\r\n        {\r\n            \"producto\": {\r\n                \"id\": 1\r\n            },\r\n            \"cantidad\": 22,\r\n            \"precioUnitario\": 5.0,\r\n            \"dtoPorcentaje\": 0,\r\n            \"iva\": 21\r\n        },\r\n        {\r\n            \"producto\": {\r\n                \"id\": 6\r\n            },\r\n            \"cantidad\": 3,\r\n            \"precioUnitario\": 6.0,\r\n            \"dtoPorcentaje\": 0,\r\n            \"iva\": 21\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/facturasimplificada/GFE",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"facturasimplificada",
+										"GFE"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Detalles de Factura",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "D Factura por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura/ID?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Factura por Factura",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura/FA?numero=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura",
+										"FA"
+									],
+									"query": [
+										{
+											"key": "numero",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Factura por Producto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura/PO?producto=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura",
+										"PO"
+									],
+									"query": [
+										{
+											"key": "producto",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Factura por Cantidad",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura/CA?cantidadInicio=1&cantidadFin=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura",
+										"CA"
+									],
+									"query": [
+										{
+											"key": "cantidadInicio",
+											"value": "1"
+										},
+										{
+											"key": "cantidadFin",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"producto\": {\r\n        \"id\": 2,\r\n        \"codBarras\": \"cod2\",\r\n        \"nombre\": \"producto2\",\r\n        \"familiaProducto\": {\r\n            \"id\": 2,\r\n            \"nombre\": \"FamiliaProducto2\",\r\n            \"familiaPadre\": null,\r\n            \"fechaEliminacion\": null\r\n        },\r\n        \"precioUnitario\": 2.0,\r\n        \"cantidad\": 2,\r\n        \"iva\": 21,\r\n        \"observaciones\": \"observaciones2\",\r\n        \"fechaEliminacion\": null\r\n    },\r\n    \"cantidad\": 22,\r\n    \"precioUnitario\": 24.0,\r\n    \"dtoPorcentaje\": 0,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1,\r\n        \"numero\": 1,\r\n        \"fecha\": \"2023-09-18T15:39:12\",\r\n        \"dtoPorcentaje\": 0,\r\n        \"observaciones\": \"Observaciones1\",\r\n        \"formaPago\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Efectivo\"\r\n        },\r\n        \"fechaAnulacion\": null,\r\n        \"cliente\": {\r\n            \"id\": 1,\r\n            \"dni\": \"1a\",\r\n            \"nombre\": \"Nombre\",\r\n            \"apellido1\": \"Apellido1\",\r\n            \"apellido2\": \"Apellido2\",\r\n            \"direccion\": \"Dirección\",\r\n            \"provincia\": \"Provincia\",\r\n            \"poblacion\": \"Poblacion\",\r\n            \"codPostal\": \"Cod\",\r\n            \"email\": \"EMail\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"producto\": {\r\n        \"id\": 2,\r\n        \"codBarras\": \"cod2\",\r\n        \"nombre\": \"producto2\",\r\n        \"familiaProducto\": {\r\n            \"id\": 2\r\n        },\r\n        \"precioUnitario\": 3.0,\r\n        \"cantidad\": 2222,\r\n        \"iva\": 21,\r\n        \"observaciones\": \"observaciones2\",\r\n        \"fechaEliminacion\": null\r\n    },\r\n    \"cantidad\": 233,\r\n    \"precioUnitario\": 244.0,\r\n    \"dtoPorcentaje\": 0,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1\r\n        },\r\n        \"fechaAnulacion\": null,\r\n        \"cliente\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura?id=4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura?id=11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "11"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "batchSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n{\r\n    \"producto\": {\r\n        \"id\": 5\r\n    },\r\n    \"cantidad\": 22,\r\n    \"precioUnitario\": 23.0,\r\n    \"dtoPorcentaje\": 2,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1\r\n    }\r\n},\r\n{\r\n    \"producto\": {\r\n        \"id\": 6\r\n    },\r\n    \"cantidad\": 252,\r\n    \"precioUnitario\": 23.0,\r\n    \"dtoPorcentaje\": 2,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1\r\n    }\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfactura/BS",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfactura",
+										"BS"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Detalles de Factura Simplificada",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "D Factura por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada/ID?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Factura por Factura",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada/FA?numero=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada",
+										"FA"
+									],
+									"query": [
+										{
+											"key": "numero",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Factura por Producto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada/PO?producto=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada",
+										"PO"
+									],
+									"query": [
+										{
+											"key": "producto",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Factura por Cantidad",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada/CA?cantidadInicio=1&cantidadFin=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada",
+										"CA"
+									],
+									"query": [
+										{
+											"key": "cantidadInicio",
+											"value": "1"
+										},
+										{
+											"key": "cantidadFin",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"producto\": {\r\n        \"id\": 2,\r\n        \"codBarras\": \"cod2\",\r\n        \"nombre\": \"producto2\",\r\n        \"familiaProducto\": {\r\n            \"id\": 2,\r\n            \"nombre\": \"FamiliaProducto2\",\r\n            \"familiaPadre\": null,\r\n            \"fechaEliminacion\": null\r\n        },\r\n        \"precioUnitario\": 2.0,\r\n        \"cantidad\": 2,\r\n        \"iva\": 21,\r\n        \"observaciones\": \"observaciones2\",\r\n        \"fechaEliminacion\": null\r\n    },\r\n    \"cantidad\": 22,\r\n    \"precioUnitario\": 24.0,\r\n    \"dtoPorcentaje\": 0,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1,\r\n        \"numero\": 1,\r\n        \"fecha\": \"2023-09-18T15:39:12\",\r\n        \"dtoPorcentaje\": 0,\r\n        \"observaciones\": \"Observaciones1\",\r\n        \"formaPago\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Efectivo\"\r\n        },\r\n        \"fechaAnulacion\": null,\r\n        \"cliente\": {\r\n            \"id\": 1,\r\n            \"dni\": \"1a\",\r\n            \"nombre\": \"Nombre\",\r\n            \"apellido1\": \"Apellido1\",\r\n            \"apellido2\": \"Apellido2\",\r\n            \"direccion\": \"Dirección\",\r\n            \"provincia\": \"Provincia\",\r\n            \"poblacion\": \"Poblacion\",\r\n            \"codPostal\": \"Cod\",\r\n            \"email\": \"EMail\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "batchSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n{\r\n    \"producto\": {\r\n        \"id\": 5\r\n    },\r\n    \"cantidad\": 22,\r\n    \"precioUnitario\": 23.0,\r\n    \"dtoPorcentaje\": 2,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1\r\n    }\r\n},\r\n{\r\n    \"producto\": {\r\n        \"id\": 6\r\n    },\r\n    \"cantidad\": 252,\r\n    \"precioUnitario\": 23.0,\r\n    \"dtoPorcentaje\": 2,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1\r\n    }\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada/BS",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada",
+										"BS"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"producto\": {\r\n        \"id\": 2,\r\n        \"codBarras\": \"cod2\",\r\n        \"nombre\": \"producto2\",\r\n        \"familiaProducto\": {\r\n            \"id\": 2\r\n        },\r\n        \"precioUnitario\": 3.0,\r\n        \"cantidad\": 2222,\r\n        \"iva\": 21,\r\n        \"observaciones\": \"observaciones2\",\r\n        \"fechaEliminacion\": null\r\n    },\r\n    \"cantidad\": 233,\r\n    \"precioUnitario\": 244.0,\r\n    \"dtoPorcentaje\": 0,\r\n    \"iva\": 4,\r\n    \"factura\": {\r\n        \"id\": 1\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada?id=4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dfacturasimplificada?id=11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dfacturasimplificada"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "11"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sorteo",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Sorteo por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/NO?nombre=Sorteo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "Sorteo"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por F Creacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/FC?fechaInicio=2023-09-01&fechaFin=2023-09-18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"FC"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-09-01"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-09-18"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por F Inicio",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/FI?fechaInicio=2023-09-01&fechaFin=2023-09-18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"FI"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-09-01"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-09-18"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por F Fin",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/FF?fechaInicio=2023-09-01&fechaFin=2023-09-24",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"FF"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-09-01"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-09-24"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por Valor TR",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/PC?dtoInicio=10&dtoFin=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"PC"
+									],
+									"query": [
+										{
+											"key": "dtoInicio",
+											"value": "10"
+										},
+										{
+											"key": "dtoFin",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por DTO Factura",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/DT?dtoInicio=10&dtoFin=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"DT"
+									],
+									"query": [
+										{
+											"key": "dtoInicio",
+											"value": "10"
+										},
+										{
+											"key": "dtoFin",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por Dias Participacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/DP?cantidadInicio=10&cantidadFin=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"DP"
+									],
+									"query": [
+										{
+											"key": "cantidadInicio",
+											"value": "10"
+										},
+										{
+											"key": "cantidadFin",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sorteo por Max Ganadores",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/MG?cantidadInicio=10&cantidadFin=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"MG"
+									],
+									"query": [
+										{
+											"key": "cantidadInicio",
+											"value": "10"
+										},
+										{
+											"key": "cantidadFin",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Realizar Sorteo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/RS",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"RS"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Gran Sorteo de Continuación de Apertura\",\r\n    \"fechaCreacion\": \"2023-10-06\",\r\n    \"fechaInicio\": \"2023-10-06\",\r\n    \"fechaFin\": \"2023-10-22\",\r\n    \"diasParticipacionValida\": 1,\r\n    \"numMaxGanador\": 4,\r\n    \"fechaEliminacion\": null,\r\n    \"porcentajeDescuentoFactura\": 2,\r\n    \"descuentoTarjetaRegalo\": 1.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/sorteo?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"sorteo"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Detalles de Sorteo",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "D Sorteo por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dsorteo/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dsorteo",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Sorteo por Sorteo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dsorteo/SO?idSorteo=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dsorteo",
+										"SO"
+									],
+									"query": [
+										{
+											"key": "idSorteo",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Sorteo por Producto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dsorteo/PO?idProducto=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dsorteo",
+										"PO"
+									],
+									"query": [
+										{
+											"key": "idProducto",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "D Sorteo por DTO",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dsorteo/DT?dtoInicio=1&dtoFin=100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dsorteo",
+										"DT"
+									],
+									"query": [
+										{
+											"key": "dtoInicio",
+											"value": "1"
+										},
+										{
+											"key": "dtoFin",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"sorteo\": {\r\n        \"id\": 1\r\n    },\r\n    \"producto\": {\r\n        \"id\": 2\r\n    },\r\n    \"porcentajeDescuento\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/dsorteo/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dsorteo",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/dsorteo?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"dsorteo"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Participaciones Sorteo",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Participacion por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Participacion por Sorteo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/SO?idSorteo=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"SO"
+									],
+									"query": [
+										{
+											"key": "idSorteo",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Participaciones Ganadoras Sorteo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/GS?idSorteo=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"GS"
+									],
+									"query": [
+										{
+											"key": "idSorteo",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Participacion por Fac Generacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/FG?idFactura=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"FG"
+									],
+									"query": [
+										{
+											"key": "idFactura",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Participacion por Fac Aplicacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/FA?idFactura=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"FA"
+									],
+									"query": [
+										{
+											"key": "idFactura",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Participacion por Fecha Anulacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/CD?fechaInicio=2023-09-01&fechaFin=2023-09-18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"CD"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-09-01"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-09-18"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Participacion por Fecha Max Validez",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/MV?fechaInicio=2023-09-01&fechaFin=2023-09-18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"MV"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "2023-09-01"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-09-18"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"numero\": 4,\r\n    \"facturaGeneracion\": {\r\n        \"id\": 3\r\n    },\r\n    \"facturaAplicacion\": {\r\n        \"id\": 6\r\n    },\r\n    \"sorteo\": {\r\n        \"id\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/participacion/SA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion",
+										"SA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/participacion?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"participacion"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Consultas",
+					"item": [
+						{
+							"name": "Usuario por Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/usuario/ID?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario",
+										"ID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuario por Empleado",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/usuario/EM?employeeId=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario",
+										"EM"
+									],
+									"query": [
+										{
+											"key": "employeeId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuario por Nombre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/usuario/NO?nombre=usuario2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario",
+										"NO"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "usuario2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cliente por Rol",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/usuario/RO?administrador=True",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario",
+										"RO"
+									],
+									"query": [
+										{
+											"key": "administrador",
+											"value": "True"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operaciones Nucleares",
+					"item": [
+						{
+							"name": "save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"empleado\": {\r\n        \"id\": 3\r\n    },\r\n    \"administrador\": true,\r\n    \"nombreUsuario\": \"usuario3\",\r\n    \"password\": \"asdasd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/usuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"empleado\": {\r\n        \"id\": 3\r\n    },\r\n    \"administrador\": true,\r\n    \"password\": \"asdasd3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/usuario?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/usuario?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"usuario"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Autentificación",
+			"item": [
+				{
+					"name": "Autentificacion Correcta Adm",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/autentificacion/AU?nombreUsuario=usuario1&password=asdasd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"autentificacion",
+								"AU"
+							],
+							"query": [
+								{
+									"key": "nombreUsuario",
+									"value": "usuario1"
+								},
+								{
+									"key": "password",
+									"value": "asdasd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Autentificacion Correcta Usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/autentificacion/AU?nombreUsuario=usuario2&password=asdasd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"autentificacion",
+								"AU"
+							],
+							"query": [
+								{
+									"key": "nombreUsuario",
+									"value": "usuario2"
+								},
+								{
+									"key": "password",
+									"value": "asdasd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Autentificacion Incorrecta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/autentificacion/AU?nombreUsuario=usuario1&password=asdasd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"autentificacion",
+								"AU"
+							],
+							"query": [
+								{
+									"key": "nombreUsuario",
+									"value": "usuario1"
+								},
+								{
+									"key": "password",
+									"value": "asdasd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comprobar Autentificacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/autentificacion/CO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"autentificacion",
+								"CO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cerrar Sesion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/autentificacion/CL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"autentificacion",
+								"CL"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

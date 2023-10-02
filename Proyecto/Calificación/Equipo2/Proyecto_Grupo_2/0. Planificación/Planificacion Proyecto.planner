@@ -1,0 +1,1173 @@
+<?xml version="1.0"?>
+<project name="AndAPepper" company="" manager="" phase="" project-start="20230904T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Jornada laboral" description="Un d&#xED;a de trabajo predeterminado"/>
+      <day-type id="1" name="Jornada de descanso" description="Un d&#xED;a de descanso predeterminado"/>
+      <day-type id="2" name="Usar base" description="Usar d&#xED;a del calendario base"/>
+    </day-types>
+    <calendar id="1" name="Predeterminado">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1500"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20230923" type="day-type" id="0"/>
+        <day date="20230909" type="day-type" id="0"/>
+        <day date="20230924" type="day-type" id="0"/>
+        <day date="20230910" type="day-type" id="0"/>
+      </days>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="An&#xE1;lisis" note="" work="415800" start="20230904T000000Z" end="20230915T100000Z" work-start="20230904T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Reuni&#xF3;n con Cliente para Determinar Requerimientos" note="" work="28800" start="20230904T000000Z" end="20230905T100000Z" work-start="20230904T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Estudio de Requerimientos" note="" work="284400" start="20230905T100000Z" end="20230910T120000Z" work-start="20230905T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+        <task id="4" name="Estudio de Requerimientos Individual FJFL" note="" work="50400" duration="50400" start="20230905T100000Z" end="20230907T120000Z" work-start="20230905T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="5" name="Estudio de Requerimientos Individual ISV" note="" work="50400" duration="50400" start="20230905T100000Z" end="20230907T120000Z" work-start="20230905T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="6" name="Estudio de Requerimientos Individual JLZC" note="" work="50400" duration="50400" start="20230905T100000Z" end="20230907T120000Z" work-start="20230905T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="7" name="Realizar Borrador An&#xE1;lisis de la Aplicaci&#xF3;n" note="" work="43200" duration="43200" start="20230907T120000Z" end="20230909T120000Z" work-start="20230907T120000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="4" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="8" name="Reuni&#xF3;n y Desarrollo del Alcance de la Aplicaci&#xF3;n" note="En esta reuni&#xF3;n nos hemos puesto de acuerdo &#10;en las preguntas a realizar a Jes&#xFA;s en la Reuni&#xF3;n.&#10;&#10;Temas a preguntar:&#10;&#9;1. Alcance de la Aplicaci&#xF3;n&#10;&#9;2. Operativa de algunas acciones por parte de los usuarios" work="10800" duration="10800" start="20230909T120000Z" end="20230910T090000Z" work-start="20230909T120000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="9" name="Reuni&#xF3;n con Jes&#xFA;s" note="La reuni&#xF3;n ha sido con Jes&#xFA;s por Meet a las 20:35&#10;" work="0" duration="3600" start="20230907T000000Z" end="20230907T000000Z" work-start="20230907T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+          <constraint type="must-start-on" time="20230907T000000Z"/>
+        </task>
+        <task id="10" name="Definici&#xF3;n del &#xC1;mbito del Proyecto" note="" work="50400" duration="50400" start="20230907T000000Z" end="20230909T100000Z" work-start="20230907T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="9" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="11" name="Creaci&#xF3;n y Documentaci&#xF3;n del An&#xE1;lisis" note="" work="18000" duration="18000" start="20230909T100000Z" end="20230910T090000Z" work-start="20230909T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="10" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="12" name="Reuni&#xF3;n Aclaratoria para el Grupo sobre los Requerimientos" note="" work="10800" duration="10800" start="20230910T090000Z" end="20230910T120000Z" work-start="20230910T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="13" name="Creaci&#xF3;n del IEEE 830 - Documento de An&#xE1;lisis de Requerimientos" note="Se ha realizado un documento completo IEEE 830" work="100800" duration="100800" start="20230910T120000Z" end="20230915T100000Z" work-start="20230910T120000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="14" name="Presentaci&#xF3;n de la Documentaci&#xF3;n del Sistema al Cliente" note="" work="1800" duration="1800" start="20230911T000000Z" end="20230911T083000Z" work-start="20230911T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20230911T000000Z"/>
+      </task>
+    </task>
+    <task id="15" name="Dise&#xF1;o" note="" work="32400" start="20230915T100000Z" end="20230918T140000Z" work-start="20230915T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+      <task id="16" name="Dise&#xF1;o de la Base de Datos - EDR" note="El EDR ha resultado ser bastante abierto a posibilidades.&#10;Se ha optado por la soluci&#xF3;n que permita la ampliaci&#xF3;n&#10;de la Aplicaci&#xF3;n." work="10800" duration="10800" start="20230915T100000Z" end="20230915T140000Z" work-start="20230915T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration"/>
+      <task id="17" name="Dise&#xF1;o de Estructura - Diagrama de Clases" note="El diagrama de clases se ha realizado de forma simple &#10;en un primer lugar para que sirva de informaci&#xF3;n base&#10;para los desarrolladores. Despu&#xE9;s se han realizado los&#10;pulidos de c&#xF3;digo necesarios para tener una estructura &#10;&#xF3;ptima" work="10800" duration="10800" start="20230915T140000Z" end="20230918T100000Z" work-start="20230915T140000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="18" name="Dise&#xF1;o API Comunicaci&#xF3;n" note="" work="10800" duration="10800" start="20230918T100000Z" end="20230918T140000Z" work-start="20230918T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="17" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="19" name="Desarrollo" note="" work="170964" start="20230918T140000Z" end="20230922T101000Z" work-start="20230918T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+      <task id="20" name="Configuraci&#xF3;n de Herramientas" note="" work="28800" start="20230918T140000Z" end="20230919T100000Z" work-start="20230918T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="21" name="Configuraci&#xF3;n de IDEs" note="" work="14400" start="20230918T140000Z" end="20230919T090000Z" work-start="20230918T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="22" name="Configuraci&#xF3;n de IDE Individual FJFL" note="" work="3600" duration="3600" start="20230918T140000Z" end="20230918T150000Z" work-start="20230918T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="23" name="Configuraci&#xF3;n de IDE Individual ISV" note="" work="3600" duration="3600" start="20230918T140000Z" end="20230918T150000Z" work-start="20230918T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="24" name="Configuraci&#xF3;n de IDE Individual JLZC" note="" work="3600" duration="3600" start="20230918T140000Z" end="20230918T150000Z" work-start="20230918T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="25" name="Comprobaci&#xF3;n de Funcionamiento de configuraciones" note="" work="3600" duration="3600" start="20230918T150000Z" end="20230919T090000Z" work-start="20230919T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="22" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="26" name="Configuraci&#xF3;n del Servidor de Base de Datos" note="" work="14400" start="20230919T090000Z" end="20230919T100000Z" work-start="20230919T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+          <task id="27" name="Configuraci&#xF3;n Individual de Servidor Mysql FJFL" note="" work="3600" duration="3600" start="20230919T090000Z" end="20230919T100000Z" work-start="20230919T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="28" name="Configuraci&#xF3;n Individual de Servidor Mysql ISV" note="" work="3600" duration="3600" start="20230919T090000Z" end="20230919T100000Z" work-start="20230919T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="29" name="Configuraci&#xF3;n Individual de Servidor Mysql JLZC" note="" work="3600" duration="3600" start="20230919T090000Z" end="20230919T100000Z" work-start="20230919T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="30" name="Comprobaci&#xF3;n de Funcionamiento de configuraciones" note="" work="3600" duration="3600" start="20230919T090000Z" end="20230919T100000Z" work-start="20230919T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+        </task>
+      </task>
+      <task id="31" name="Gesti&#xF3;n Proyecto Base" note="" work="3600" start="20230919T100000Z" end="20230919T110000Z" work-start="20230919T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="26" type="FS"/>
+        </predecessors>
+        <task id="32" name="Creaci&#xF3;n del Proyecto Base" note="" work="1800" duration="1800" start="20230919T100000Z" end="20230919T103000Z" work-start="20230919T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="33" name="Crear Entidad de Muestra" note="" work="600" duration="600" start="20230919T103000Z" end="20230919T104000Z" work-start="20230919T103000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="32" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="34" name="Distribuci&#xF3;n Proyecto Base" note="" work="1200" duration="1200" start="20230919T104000Z" end="20230919T110000Z" work-start="20230919T104000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="33" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="35" name="Desarrollo de la Capa de Entidades" note="" work="25464" start="20230919T110000Z" end="20230919T144000Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="31" type="FS"/>
+        </predecessors>
+        <task id="36" name="Desarrollo de Entidades de Ventas" note="" work="9000" start="20230919T110000Z" end="20230919T133000Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="37" name="Desarrollo de la Entidad Cliente" note="" work="3600" duration="3600" start="20230919T110000Z" end="20230919T120000Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="38" name="Desarrollo de Entidades de Factura" note="" work="1800" start="20230919T110000Z" end="20230919T113000Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="39" name="Desarrollo de la Entidad Factura" note="" work="900" duration="900" start="20230919T110000Z" end="20230919T111500Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="40" name="Desarrollo de la Entidad Detalle de Factura" note="" work="900" duration="900" start="20230919T111500Z" end="20230919T113000Z" work-start="20230919T111500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="39" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="41" name="Desarrollo de Entidades de Factura Simplificada" note="" work="1800" start="20230919T110000Z" end="20230919T113000Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="42" name="Desarrollo de la Entidad Factura Simplificada" note="" work="900" duration="900" start="20230919T110000Z" end="20230919T111500Z" work-start="20230919T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="43" name="Desarrollo de la Entidad Detalle Factura Simplificada" note="" work="900" duration="900" start="20230919T111500Z" end="20230919T113000Z" work-start="20230919T111500Z" percent-complete="42" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="42" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="44" name="Desarrollo de Entidades de Producto" note="" work="1800" start="20230919T120000Z" end="20230919T133000Z" work-start="20230919T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="37" type="FS"/>
+            </predecessors>
+            <task id="45" name="Desarrollo de la Entidad Producto" note="" work="900" duration="900" start="20230919T120000Z" end="20230919T131500Z" work-start="20230919T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="46" name="Desarrollo de la Entidad Familia Producto" note="" work="900" duration="900" start="20230919T131500Z" end="20230919T133000Z" work-start="20230919T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="45" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="47" name="Desarrollo de Entidades de Fidelizaci&#xF3;n" note="" work="2982" start="20230919T113000Z" end="20230919T135000Z" work-start="20230919T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="48" name="Desarrollo de la Entidad Participaci&#xF3;n" note="" work="1200" duration="1200" start="20230919T133000Z" end="20230919T135000Z" work-start="20230919T133000Z" percent-complete="66" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="46" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="49" name="Desarrollo de la Entidad Sorteo" note="" work="891" duration="1200" start="20230919T113000Z" end="20230919T115000Z" work-start="20230919T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="43" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="50" name="Desarrollo de la Entidad Detalle Sorteo" note="" work="891" duration="1200" start="20230919T115000Z" end="20230919T131000Z" work-start="20230919T115000Z" percent-complete="45" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="49" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="51" name="Desarrollo de Entidades de Seguridad" note="" work="13482" start="20230919T113000Z" end="20230919T144000Z" work-start="20230919T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="52" name="Desarrollo de la Entidad Empleado" note="" work="900" duration="900" start="20230919T113000Z" end="20230919T114500Z" work-start="20230919T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="40" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="53" name="Desarrollo de la Entidad Usuario" note="" work="891" duration="900" start="20230919T114500Z" end="20230919T120000Z" work-start="20230919T114500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="52" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="54" name="Desarrollo de Entidades Maestras Seguridad" note="" work="1791" start="20230919T131000Z" end="20230919T134000Z" work-start="20230919T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="55" name="Desarrollo de la Entidad Log Tipo Entidad" note="" work="900" duration="900" start="20230919T131000Z" end="20230919T132500Z" work-start="20230919T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="50" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="56" name="Desarrollo de la Entidad Log Operaciones" note="" work="891" duration="900" start="20230919T132500Z" end="20230919T134000Z" work-start="20230919T132500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="55" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="57" name="Desarrollo de Entidades Logs de Operaciones" note="" work="5400" start="20230919T134000Z" end="20230919T144000Z" work-start="20230919T134000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="58" name="Desarrollo de la Entidad Log Administraci&#xF3;n" note="" work="1800" duration="1800" start="20230919T135000Z" end="20230919T142000Z" work-start="20230919T135000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="48" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="59" name="Desarrollo de la Entidad Log Ventas" note="" work="1800" duration="1800" start="20230919T134000Z" end="20230919T141000Z" work-start="20230919T134000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="56" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="60" name="Desarrollo de la Entidad Log Sorteos" note="" work="1800" duration="1800" start="20230919T141000Z" end="20230919T144000Z" work-start="20230919T141000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="59" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="61" name="Desarrollo de Entidades Logs de Seguridad" note="" work="4500" start="20230919T120000Z" end="20230919T141500Z" work-start="20230919T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="62" name="Desarrollo de la Entidad Sec Log Administraci&#xF3;n" note="" work="900" duration="900" start="20230919T120000Z" end="20230919T131500Z" work-start="20230919T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="53" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="63" name="Desarrollo de la Entidad Sec Log Ventas" note="" work="1800" duration="1800" start="20230919T131500Z" end="20230919T134500Z" work-start="20230919T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="62" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="64" name="Desarrollo de la Entidad Sec Sorteos" note="" work="1800" duration="1800" start="20230919T134500Z" end="20230919T141500Z" work-start="20230919T134500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="63" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="65" name="Comprobaci&#xF3;n de Funcionamiento de Entidades" note="" work="3600" duration="3600" start="20230919T144000Z" end="20230920T084000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="61" type="FS"/>
+          <predecessor id="1" predecessor-id="57" type="FS"/>
+          <predecessor id="1" predecessor-id="54" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="66" name="Desarrollo de la Capa de Repositorio" note="" work="30300" start="20230919T144000Z" end="20230920T111000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="35" type="FS"/>
+        </predecessors>
+        <task id="67" name="Desarrollo de los Repositorios de Ventas" note="" work="9900" start="20230919T144000Z" end="20230920T090000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="68" name="Desarrollo del Repositorio Cliente" note="" work="2700" start="20230919T144000Z" end="20230919T145500Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="69" name="Desarrollo de los Repositorios de Factura" note="" work="2400" start="20230919T144000Z" end="20230920T082000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="70" name="Desarrollo del Repositorio Factura" note="" work="1200" duration="1200" start="20230919T144000Z" end="20230919T150000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="71" name="Desarrollo del Repositorio Detalle de Factura" note="" work="1200" duration="1200" start="20230919T150000Z" end="20230920T082000Z" work-start="20230920T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="70" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="72" name="Desarrollo de los Repositorios de Factura Simplificada" note="" work="2400" start="20230919T144000Z" end="20230920T082000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="73" name="Desarrollo del Repositorio Factura Simplificada" note="" work="1200" duration="1200" start="20230919T144000Z" end="20230919T150000Z" work-start="20230919T144000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="74" name="Desarrollo del Repositorio Detalle Factura Simplificada" note="" work="1200" duration="1200" start="20230919T150000Z" end="20230920T082000Z" work-start="20230920T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="73" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="75" name="Desarrollo de los Repositorios Producto" note="" work="2400" start="20230920T082000Z" end="20230920T090000Z" work-start="20230920T082000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="76" name="Desarrollo del Repositorio Producto" note="" work="1200" duration="1200" start="20230920T082000Z" end="20230920T084000Z" work-start="20230920T082000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="69" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="77" name="Desarrollo del Repositorio Familia Producto" note="" work="1200" duration="1200" start="20230920T084000Z" end="20230920T090000Z" work-start="20230920T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="76" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="78" name="Desarrollo de los Repositorios de Fidelizaci&#xF3;n" note="" work="3900" start="20230920T082000Z" end="20230920T090500Z" work-start="20230920T082000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="79" name="Desarrollo del Repositorio Sorteo" note="" work="1200" duration="1200" start="20230920T082000Z" end="20230920T084000Z" work-start="20230920T082000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="72" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="80" name="Desarrollo del Repositorio Participaci&#xF3;n" note="" work="1500" duration="1500" start="20230920T084000Z" end="20230920T090500Z" work-start="20230920T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="79" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="81" name="Desarrollo del Repositorio Detalle Sorteo" note="" work="1200" duration="1200" start="20230920T084000Z" end="20230920T090000Z" work-start="20230920T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="79" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="82" name="Desarrollo de los Repositorios de Seguridad" note="" work="16500" start="20230919T145500Z" end="20230920T111000Z" work-start="20230919T145500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="83" name="Desarrollo del Repositorio Empleado" note="" work="1200" duration="1200" start="20230920T090000Z" end="20230920T092000Z" work-start="20230920T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="75" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="84" name="Desarrollo del Repositorio Usuario" note="" work="1200" duration="1200" start="20230920T092000Z" end="20230920T094000Z" work-start="20230920T092000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="83" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="85" name="Desarrollo de los Repositorios Maestros Seguridad" note="" work="2400" start="20230919T145500Z" end="20230920T083500Z" work-start="20230919T145500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="86" name="Desarrollo del Repositorio Log Tipo Entidad" note="" work="1200" duration="1200" start="20230919T145500Z" end="20230920T081500Z" work-start="20230919T145500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="68" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="87" name="Desarrollo del Repositorio Log Operaciones" note="" work="1200" duration="1200" start="20230920T081500Z" end="20230920T083500Z" work-start="20230920T081500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="86" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="88" name="Desarrollo del Repositorio Logs de Operaciones" note="" work="6300" start="20230920T090500Z" end="20230920T105000Z" work-start="20230920T090500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="89" name="Desarrollo del Repositorio Log Administraci&#xF3;n" note="" work="2100" duration="2100" start="20230920T090500Z" end="20230920T094000Z" work-start="20230920T090500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="78" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="90" name="Desarrollo del Repositorio Log Ventas" note="" work="2100" duration="2100" start="20230920T094000Z" end="20230920T101500Z" work-start="20230920T094000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="89" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="91" name="Desarrollo del Repositorio Log Sorteos" note="" work="2100" duration="2100" start="20230920T101500Z" end="20230920T105000Z" work-start="20230920T101500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="90" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="92" name="Desarrollo del Repositorio Logs de Seguridad" note="" work="5400" start="20230920T094000Z" end="20230920T111000Z" work-start="20230920T094000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="93" name="Desarrollo del Repositorio Sec Log Administraci&#xF3;n" note="" work="1200" duration="1200" start="20230920T094000Z" end="20230920T100000Z" work-start="20230920T094000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="84" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="94" name="Desarrollo del Repositrio Sec Log Ventas" note="" work="2100" duration="2100" start="20230920T100000Z" end="20230920T103500Z" work-start="20230920T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="93" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="95" name="Desarrollo del Repositorio Sec Sorteos" note="" work="2100" duration="2100" start="20230920T103500Z" end="20230920T111000Z" work-start="20230920T103500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="94" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="96" name="Comprobaci&#xF3;n de Funcionamiento de Repositorios" note="" work="3600" duration="3600" start="20230920T111000Z" end="20230920T131000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="82" type="FS"/>
+          <predecessor id="1" predecessor-id="78" type="FS"/>
+          <predecessor id="1" predecessor-id="67" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="97" name="Desarrollo de la Capa de Servicios" note="" work="28800" start="20230920T111000Z" end="20230921T084000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="66" type="FS"/>
+        </predecessors>
+        <task id="98" name="Desarrollo de los Servicios de Ventas" note="" work="8400" start="20230920T111000Z" end="20230920T131000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="99" name="Desarrollo del Servicio Cliente" note="" work="1200" duration="1200" start="20230920T111000Z" end="20230920T113000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="100" name="Desarrollo de los Servicios de Factura" note="" work="2400" start="20230920T111000Z" end="20230920T115000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="101" name="Desarrollo del Servicio Factura" note="" work="1200" duration="1200" start="20230920T111000Z" end="20230920T113000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="102" name="Desarrollo del Servicio Detalle de Factura" note="" work="1200" duration="1200" start="20230920T113000Z" end="20230920T115000Z" work-start="20230920T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="101" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="103" name="Desarrollo de los Servicios de Factura Simplificada" note="" work="2400" start="20230920T111000Z" end="20230920T115000Z" work-start="20230920T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="104" name="Desarrollo del Servicio Factura Simplificada" note="" work="1200" duration="1200" start="20230920T111000Z" end="20230920T113000Z" work-start="20230920T111000Z" percent-complete="40" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="105" name="Desarrollo del Servicio Detalle Factura Simplificada" note="" work="1200" duration="1200" start="20230920T113000Z" end="20230920T115000Z" work-start="20230920T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="104" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="106" name="Desarrollo de los Servicios Producto" note="" work="2400" start="20230920T113000Z" end="20230920T131000Z" work-start="20230920T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="107" name="Desarrollo del Servicio Producto" note="" work="1200" duration="1200" start="20230920T113000Z" end="20230920T115000Z" work-start="20230920T113000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="99" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="108" name="Desarrollo del Servicio Familia Producto" note="" work="1200" duration="1200" start="20230920T115000Z" end="20230920T131000Z" work-start="20230920T115000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="107" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="109" name="Desarrollo de los Servicios de Fidelizaci&#xF3;n" note="" work="3900" start="20230920T115000Z" end="20230920T135500Z" work-start="20230920T115000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="110" name="Desarrollo del Servicio Sorteo" note="" work="1200" duration="1200" start="20230920T115000Z" end="20230920T131000Z" work-start="20230920T115000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="105" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="111" name="Desarrollo del Servicio Participaci&#xF3;n" note="" work="1500" duration="1500" start="20230920T131000Z" end="20230920T133500Z" work-start="20230920T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="110" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="112" name="Desarrollo del Servicio Detalle Sorteo" note="" work="1200" duration="1200" start="20230920T133500Z" end="20230920T135500Z" work-start="20230920T133500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="111" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="113" name="Desarrollo de los Servicios de Seguridad" note="" work="16500" start="20230920T115000Z" end="20230921T084000Z" work-start="20230920T115000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="114" name="Desarrollo del Servicio Empleado" note="" work="1200" duration="1200" start="20230920T115000Z" end="20230920T131000Z" work-start="20230920T115000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="102" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="115" name="Desarrollo del Servicio Usuario" note="" work="1200" duration="1200" start="20230920T131000Z" end="20230920T133000Z" work-start="20230920T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="114" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="116" name="Desarrollo de los Servicios Maestros Seguridad" note="" work="2400" start="20230920T131000Z" end="20230920T135000Z" work-start="20230920T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="117" name="Desarrollo del Servicio Log Tipo Entidad" note="" work="1200" duration="1200" start="20230920T131000Z" end="20230920T133000Z" work-start="20230920T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="108" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="118" name="Desarrollo del Servicio Log Operaciones" note="" work="1200" duration="1200" start="20230920T133000Z" end="20230920T135000Z" work-start="20230920T133000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="117" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="119" name="Desarrollo del Servicio Logs de Operaciones" note="" work="6300" start="20230920T135500Z" end="20230921T084000Z" work-start="20230920T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="120" name="Desarrollo del Servicio Log Administraci&#xF3;n" note="" work="2100" duration="2100" start="20230920T135500Z" end="20230920T143000Z" work-start="20230920T135500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="112" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="121" name="Desarrollo del Servicio Log Ventas" note="" work="2100" duration="2100" start="20230920T143000Z" end="20230921T080500Z" work-start="20230920T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="120" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="122" name="Desarrollo del Servicio Log Sorteos" note="" work="2100" duration="2100" start="20230921T080500Z" end="20230921T084000Z" work-start="20230921T080500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="121" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="123" name="Desarrollo del Servicio Logs de Seguridad" note="" work="5400" start="20230920T133000Z" end="20230920T150000Z" work-start="20230920T133000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="124" name="Desarrollo del Servicio Sec Log Administraci&#xF3;n" note="" work="1200" duration="1200" start="20230920T133000Z" end="20230920T135000Z" work-start="20230920T133000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="115" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="125" name="Desarrollo del Servicio Sec Log Ventas" note="" work="2100" duration="2100" start="20230920T135000Z" end="20230920T142500Z" work-start="20230920T135000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="124" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="126" name="Desarrollo del Servicio Sec Sorteos" note="" work="2100" duration="2100" start="20230920T142500Z" end="20230920T150000Z" work-start="20230920T142500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="125" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="127" name="Comprobaci&#xF3;n de Funcionamiento de Servicios" note="" work="3600" duration="3600" start="20230921T084000Z" end="20230921T094000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="113" type="FS"/>
+          <predecessor id="1" predecessor-id="109" type="FS"/>
+          <predecessor id="1" predecessor-id="98" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="128" name="Desarrollo de la Capa de Controlador" note="" work="28800" start="20230921T084000Z" end="20230921T131000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="97" type="FS"/>
+        </predecessors>
+        <task id="129" name="Desarrollo de Controladores de Ventas" note="" work="8400" start="20230921T084000Z" end="20230921T094000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="130" name="Desarrollo del Controlador Cliente" note="" work="1200" duration="1200" start="20230921T084000Z" end="20230921T090000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+          <task id="131" name="Desarrollo de los Controladores de Factura" note="" work="2400" start="20230921T084000Z" end="20230921T092000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="132" name="Desarrollo del Controlador Factura" note="" work="1200" duration="1200" start="20230921T084000Z" end="20230921T090000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="133" name="Desarrollo del Controlador Detalle de Factura" note="" work="1200" duration="1200" start="20230921T090000Z" end="20230921T092000Z" work-start="20230921T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="132" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="134" name="Desarrollo de los Controladores de Factura Simplificada" note="" work="2400" start="20230921T084000Z" end="20230921T092000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="135" name="Desarrollo del Controlador Factura Simplificada" note="" work="1200" duration="1200" start="20230921T084000Z" end="20230921T090000Z" work-start="20230921T084000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+            <task id="136" name="Desarrollo del Controlador Detalle Factura Simplificada" note="" work="1200" duration="1200" start="20230921T090000Z" end="20230921T092000Z" work-start="20230921T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="135" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="137" name="Desarrollo de los Controladores Producto" note="" work="2400" start="20230921T090000Z" end="20230921T094000Z" work-start="20230921T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="138" name="Desarrollo del Controlador Producto" note="" work="1200" duration="1200" start="20230921T090000Z" end="20230921T092000Z" work-start="20230921T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="130" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="139" name="Desarrollo del Controlador Familia Producto" note="" work="1200" duration="1200" start="20230921T092000Z" end="20230921T094000Z" work-start="20230921T092000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="138" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="140" name="Desarrollo de Controladores de Fidelizaci&#xF3;n" note="" work="3900" start="20230921T092000Z" end="20230921T102500Z" work-start="20230921T092000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="141" name="Desarrollo del Controlador Participaci&#xF3;n" note="" work="1500" duration="1500" start="20230921T092000Z" end="20230921T094500Z" work-start="20230921T092000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="136" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="142" name="Desarrollo del Controlador Sorteo" note="" work="1200" duration="1200" start="20230921T094500Z" end="20230921T100500Z" work-start="20230921T094500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="141" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="143" name="Desarrollo del Controlador Detalle Sorteo" note="" work="1200" duration="1200" start="20230921T100500Z" end="20230921T102500Z" work-start="20230921T100500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="142" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="144" name="Desarrollo de Controladores de Seguridad" note="" work="16500" start="20230921T092000Z" end="20230921T131000Z" work-start="20230921T092000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="145" name="Desarrollo del Controlador Empleado" note="" work="1200" duration="1200" start="20230921T092000Z" end="20230921T094000Z" work-start="20230921T092000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="133" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="146" name="Desarrollo del Controlador Usuario" note="" work="1200" duration="1200" start="20230921T094000Z" end="20230921T100000Z" work-start="20230921T094000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+            <predecessors>
+              <predecessor id="1" predecessor-id="145" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="147" name="Desarrollo de los Controladores Maestros Seguridad" note="" work="2400" start="20230921T094000Z" end="20230921T102000Z" work-start="20230921T094000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="148" name="Desarrollo del Controlador Log Tipo Entidad" note="" work="1200" duration="1200" start="20230921T094000Z" end="20230921T100000Z" work-start="20230921T094000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="139" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="149" name="Desarrollo del Controlador Log Operaciones" note="" work="1200" duration="1200" start="20230921T100000Z" end="20230921T102000Z" work-start="20230921T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="148" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="150" name="Desarrollo del Controlador Logs de Operaciones" note="" work="6300" start="20230921T102500Z" end="20230921T131000Z" work-start="20230921T102500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="151" name="Desarrollo del ControladorLog Administraci&#xF3;n" note="" work="2100" duration="2100" start="20230921T102500Z" end="20230921T110000Z" work-start="20230921T102500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="143" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="152" name="Desarrollo del Controlador Log Ventas" note="" work="2100" duration="2100" start="20230921T110000Z" end="20230921T113500Z" work-start="20230921T110000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="151" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="153" name="Desarrollo del Controlador Log Sorteos" note="" work="2100" duration="2100" start="20230921T113500Z" end="20230921T131000Z" work-start="20230921T113500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="152" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="154" name="Desarrollo del Controlador Logs de Seguridad" note="" work="5400" start="20230921T100000Z" end="20230921T113000Z" work-start="20230921T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="155" name="Desarrollo del Controlador Sec Log Administraci&#xF3;n" note="" work="1200" duration="1200" start="20230921T100000Z" end="20230921T102000Z" work-start="20230921T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="146" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="156" name="Desarrollo del Controlador Sec Log Ventas" note="" work="2100" duration="2100" start="20230921T102000Z" end="20230921T105500Z" work-start="20230921T102000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="155" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="157" name="Desarrollo del Controlador Sec Sorteos" note="" work="2100" duration="2100" start="20230921T105500Z" end="20230921T113000Z" work-start="20230921T105500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+              <predecessors>
+                <predecessor id="1" predecessor-id="156" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="158" name="Comprobaci&#xF3;n de Funcionamiento de Controladores" note="" work="3600" duration="3600" start="20230921T131000Z" end="20230921T141000Z" work-start="20230921T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <predecessors>
+          <predecessor id="1" predecessor-id="144" type="FS"/>
+          <predecessor id="1" predecessor-id="140" type="FS"/>
+          <predecessor id="1" predecessor-id="129" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="159" name="Integraci&#xF3;n Capa Seguridad en el Sistema" note="" work="10800" start="20230921T141000Z" end="20230922T101000Z" work-start="20230921T141000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="158" type="FS"/>
+        </predecessors>
+        <task id="160" name="Desarrollo de la Seguridad Nivel Repositorio" note="" work="3600" duration="3600" start="20230921T141000Z" end="20230922T081000Z" work-start="20230921T141000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="161" name="Desarrollo de la Seguridad Nivel Servicio" note="" work="3600" duration="3600" start="20230922T081000Z" end="20230922T091000Z" work-start="20230922T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="160" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="162" name="Desarrollo de la Seguridad Nivel Controlador" note="" work="3600" duration="3600" start="20230922T091000Z" end="20230922T101000Z" work-start="20230922T091000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="161" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="163" name="Pruebas" note="" work="25200" start="20230921T102500Z" end="20230923T081000Z" work-start="20230921T102500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="164" name="Pruebas de Producci&#xF3;n" note="" work="10800" start="20230921T102500Z" end="20230921T142500Z" work-start="20230921T102500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="140" type="FS"/>
+          <predecessor id="1" predecessor-id="137" type="FS"/>
+        </predecessors>
+        <task id="165" name="Pruebas Funcionales" note="" work="3600" duration="3600" start="20230921T102500Z" end="20230921T112500Z" work-start="20230921T102500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="166" name="Pruebas de Carga" note="" work="3600" duration="3600" start="20230921T112500Z" end="20230921T132500Z" work-start="20230921T112500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="165" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="167" name="Pruebas de Estr&#xE9;s" note="" work="3600" duration="3600" start="20230921T132500Z" end="20230921T142500Z" work-start="20230921T132500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="166" type="FS"/>
+            <predecessor id="1" predecessor-id="165" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="168" name="Pruebas de Seguridad" note="" work="14400" start="20230922T101000Z" end="20230923T081000Z" work-start="20230922T101000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="159" type="FS"/>
+        </predecessors>
+        <task id="169" name="Pruebas de Seguridad Nivel Repositorio" note="" work="3600" duration="3600" start="20230922T101000Z" end="20230922T111000Z" work-start="20230922T101000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="170" name="Pruebas de Seguridad Nivel Servicio" note="" work="3600" duration="3600" start="20230922T111000Z" end="20230922T131000Z" work-start="20230922T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="169" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="171" name="Pruebas de Seguridad Nivel Controlador" note="" work="3600" duration="3600" start="20230922T131000Z" end="20230922T141000Z" work-start="20230922T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="170" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="172" name="Pruebas de Seguridad API" note="" work="3600" duration="3600" start="20230922T141000Z" end="20230923T081000Z" work-start="20230922T141000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="171" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="173" name="Documentaci&#xF3;n" note="" work="28800" start="20230921T132500Z" end="20230923T141000Z" work-start="20230921T132500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="174" name="Realizar Documentaci&#xF3;n API" note="" work="10800" duration="10800" start="20230921T132500Z" end="20230922T092500Z" work-start="20230921T132500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <task id="175" name="Documentar API Ventas" note="" work="3600" duration="3600" start="20230921T132500Z" end="20230921T142500Z" work-start="20230921T132500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="166" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="176" name="Documentar API Fidelizaci&#xF3;n" note="" work="3600" duration="3600" start="20230921T142500Z" end="20230922T082500Z" work-start="20230921T142500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="167" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="177" name="Documentar API Seguridad" note="" work="3600" duration="3600" start="20230922T082500Z" end="20230922T092500Z" work-start="20230922T082500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="176" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="178" name="Enmaquetamiento Documentaci&#xF3;n" note="" work="18000" start="20230923T081000Z" end="20230923T141000Z" work-start="20230923T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="168" type="FS"/>
+        </predecessors>
+        <task id="179" name="Enmaquetar Documentaci&#xF3;n de An&#xE1;lisis" note="" work="3600" duration="3600" start="20230923T081000Z" end="20230923T091000Z" work-start="20230923T081000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration"/>
+        <task id="180" name="Enmaquetar Documentaci&#xF3;n de Dise&#xF1;o" note="" work="3600" duration="3600" start="20230923T091000Z" end="20230923T101000Z" work-start="20230923T091000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="179" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="181" name="Enmaquetar Documentaci&#xF3;n de Desarrollo" note="" work="3600" duration="3600" start="20230923T101000Z" end="20230923T111000Z" work-start="20230923T101000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="180" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="182" name="Enmaquetar Documentaci&#xF3;n de Pruebas" note="" work="3600" duration="3600" start="20230923T111000Z" end="20230923T131000Z" work-start="20230923T111000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="181" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="183" name="Enmaquetar Documentaci&#xF3;n API" note="" work="3600" duration="3600" start="20230923T131000Z" end="20230923T141000Z" work-start="20230923T131000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="182" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="184" name="Entrega" note="" work="3600" duration="3600" start="20230923T141000Z" end="20230924T081000Z" work-start="20230923T141000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <predecessors>
+        <predecessor id="1" predecessor-id="173" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Profesor Jes&#xFA;s" short-name="P.J" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="F. Javier Ferreir&#xF3;s L&#xF3;pez" short-name="FJFL" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="I&#xF1;aki Su&#xE1;rez Valdivieso" short-name="ISV" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="4" name="Jos&#xE9; Luis Zaragoz&#xE1; Castro" short-name="JLZC" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="5" name="Terminal FJFL" short-name="T.FJFL" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="6" name="Terminal ISV" short-name="T.ISV" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="7" name="Terminal JLZC" short-name="T.JLZC" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="8" name="Zoom" short-name="Zoom" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="9" name="Google Meet" short-name="G.Meet" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="10" name="Servidor BBDD FJFL" short-name="Mysql FJFL" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="11" name="Servidor BBDD ISV" short-name="Mysql ISV" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="12" name="Servidor BBDD JLZC" short-name="Mysql JLZC" type="2" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="184" resource-id="1" units="9"/>
+    <allocation task-id="14" resource-id="1" units="13"/>
+    <allocation task-id="9" resource-id="1" units="0"/>
+    <allocation task-id="184" resource-id="2" units="9"/>
+    <allocation task-id="180" resource-id="2" units="33"/>
+    <allocation task-id="181" resource-id="2" units="33"/>
+    <allocation task-id="182" resource-id="2" units="33"/>
+    <allocation task-id="183" resource-id="2" units="33"/>
+    <allocation task-id="179" resource-id="2" units="33"/>
+    <allocation task-id="169" resource-id="2" units="33"/>
+    <allocation task-id="170" resource-id="2" units="33"/>
+    <allocation task-id="171" resource-id="2" units="33"/>
+    <allocation task-id="172" resource-id="2" units="33"/>
+    <allocation task-id="160" resource-id="2" units="33"/>
+    <allocation task-id="161" resource-id="2" units="33"/>
+    <allocation task-id="162" resource-id="2" units="33"/>
+    <allocation task-id="158" resource-id="2" units="10"/>
+    <allocation task-id="155" resource-id="2" units="33"/>
+    <allocation task-id="156" resource-id="2" units="33"/>
+    <allocation task-id="157" resource-id="2" units="33"/>
+    <allocation task-id="145" resource-id="2" units="33"/>
+    <allocation task-id="146" resource-id="2" units="33"/>
+    <allocation task-id="132" resource-id="2" units="33"/>
+    <allocation task-id="133" resource-id="2" units="33"/>
+    <allocation task-id="127" resource-id="2" units="10"/>
+    <allocation task-id="124" resource-id="2" units="33"/>
+    <allocation task-id="125" resource-id="2" units="33"/>
+    <allocation task-id="126" resource-id="2" units="33"/>
+    <allocation task-id="114" resource-id="2" units="33"/>
+    <allocation task-id="115" resource-id="2" units="33"/>
+    <allocation task-id="101" resource-id="2" units="33"/>
+    <allocation task-id="102" resource-id="2" units="33"/>
+    <allocation task-id="96" resource-id="2" units="11"/>
+    <allocation task-id="93" resource-id="2" units="33"/>
+    <allocation task-id="94" resource-id="2" units="33"/>
+    <allocation task-id="95" resource-id="2" units="33"/>
+    <allocation task-id="84" resource-id="2" units="33"/>
+    <allocation task-id="83" resource-id="2" units="33"/>
+    <allocation task-id="76" resource-id="2" units="33"/>
+    <allocation task-id="77" resource-id="2" units="33"/>
+    <allocation task-id="70" resource-id="2" units="33"/>
+    <allocation task-id="71" resource-id="2" units="33"/>
+    <allocation task-id="65" resource-id="2" units="11"/>
+    <allocation task-id="62" resource-id="2" units="33"/>
+    <allocation task-id="63" resource-id="2" units="33"/>
+    <allocation task-id="64" resource-id="2" units="33"/>
+    <allocation task-id="52" resource-id="2" units="33"/>
+    <allocation task-id="53" resource-id="2" units="33"/>
+    <allocation task-id="39" resource-id="2" units="33"/>
+    <allocation task-id="40" resource-id="2" units="33"/>
+    <allocation task-id="33" resource-id="2" units="50"/>
+    <allocation task-id="34" resource-id="2" units="14"/>
+    <allocation task-id="32" resource-id="2" units="14"/>
+    <allocation task-id="27" resource-id="2" units="33"/>
+    <allocation task-id="25" resource-id="2" units="14"/>
+    <allocation task-id="22" resource-id="2" units="50"/>
+    <allocation task-id="18" resource-id="2" units="14"/>
+    <allocation task-id="16" resource-id="2" units="14"/>
+    <allocation task-id="17" resource-id="2" units="14"/>
+    <allocation task-id="14" resource-id="2" units="13"/>
+    <allocation task-id="12" resource-id="2" units="20"/>
+    <allocation task-id="13" resource-id="2" units="50"/>
+    <allocation task-id="10" resource-id="2" units="50"/>
+    <allocation task-id="11" resource-id="2" units="50"/>
+    <allocation task-id="9" resource-id="2" units="0"/>
+    <allocation task-id="8" resource-id="2" units="14"/>
+    <allocation task-id="7" resource-id="2" units="17"/>
+    <allocation task-id="4" resource-id="2" units="50"/>
+    <allocation task-id="184" resource-id="3" units="9"/>
+    <allocation task-id="175" resource-id="3" units="33"/>
+    <allocation task-id="165" resource-id="3" units="17"/>
+    <allocation task-id="166" resource-id="3" units="33"/>
+    <allocation task-id="158" resource-id="3" units="10"/>
+    <allocation task-id="148" resource-id="3" units="33"/>
+    <allocation task-id="149" resource-id="3" units="33"/>
+    <allocation task-id="138" resource-id="3" units="33"/>
+    <allocation task-id="139" resource-id="3" units="33"/>
+    <allocation task-id="130" resource-id="3" units="33"/>
+    <allocation task-id="127" resource-id="3" units="10"/>
+    <allocation task-id="117" resource-id="3" units="33"/>
+    <allocation task-id="118" resource-id="3" units="33"/>
+    <allocation task-id="107" resource-id="3" units="33"/>
+    <allocation task-id="108" resource-id="3" units="33"/>
+    <allocation task-id="99" resource-id="3" units="33"/>
+    <allocation task-id="96" resource-id="3" units="11"/>
+    <allocation task-id="87" resource-id="3" units="33"/>
+    <allocation task-id="86" resource-id="3" units="33"/>
+    <allocation task-id="68" resource-id="3" units="100"/>
+    <allocation task-id="65" resource-id="3" units="11"/>
+    <allocation task-id="58" resource-id="3" units="33"/>
+    <allocation task-id="48" resource-id="3" units="33"/>
+    <allocation task-id="45" resource-id="3" units="33"/>
+    <allocation task-id="46" resource-id="3" units="33"/>
+    <allocation task-id="37" resource-id="3" units="33"/>
+    <allocation task-id="34" resource-id="3" units="14"/>
+    <allocation task-id="32" resource-id="3" units="14"/>
+    <allocation task-id="28" resource-id="3" units="33"/>
+    <allocation task-id="25" resource-id="3" units="14"/>
+    <allocation task-id="23" resource-id="3" units="50"/>
+    <allocation task-id="18" resource-id="3" units="14"/>
+    <allocation task-id="16" resource-id="3" units="14"/>
+    <allocation task-id="17" resource-id="3" units="14"/>
+    <allocation task-id="14" resource-id="3" units="13"/>
+    <allocation task-id="12" resource-id="3" units="20"/>
+    <allocation task-id="8" resource-id="3" units="14"/>
+    <allocation task-id="7" resource-id="3" units="17"/>
+    <allocation task-id="5" resource-id="3" units="50"/>
+    <allocation task-id="184" resource-id="4" units="9"/>
+    <allocation task-id="177" resource-id="4" units="33"/>
+    <allocation task-id="176" resource-id="4" units="33"/>
+    <allocation task-id="165" resource-id="4" units="17"/>
+    <allocation task-id="167" resource-id="4" units="33"/>
+    <allocation task-id="158" resource-id="4" units="10"/>
+    <allocation task-id="151" resource-id="4" units="33"/>
+    <allocation task-id="152" resource-id="4" units="33"/>
+    <allocation task-id="153" resource-id="4" units="33"/>
+    <allocation task-id="141" resource-id="4" units="33"/>
+    <allocation task-id="142" resource-id="4" units="33"/>
+    <allocation task-id="143" resource-id="4" units="33"/>
+    <allocation task-id="135" resource-id="4" units="33"/>
+    <allocation task-id="136" resource-id="4" units="33"/>
+    <allocation task-id="127" resource-id="4" units="10"/>
+    <allocation task-id="120" resource-id="4" units="33"/>
+    <allocation task-id="121" resource-id="4" units="33"/>
+    <allocation task-id="122" resource-id="4" units="33"/>
+    <allocation task-id="111" resource-id="4" units="33"/>
+    <allocation task-id="110" resource-id="4" units="33"/>
+    <allocation task-id="112" resource-id="4" units="33"/>
+    <allocation task-id="104" resource-id="4" units="33"/>
+    <allocation task-id="105" resource-id="4" units="33"/>
+    <allocation task-id="96" resource-id="4" units="11"/>
+    <allocation task-id="89" resource-id="4" units="33"/>
+    <allocation task-id="90" resource-id="4" units="33"/>
+    <allocation task-id="91" resource-id="4" units="33"/>
+    <allocation task-id="80" resource-id="4" units="33"/>
+    <allocation task-id="79" resource-id="4" units="33"/>
+    <allocation task-id="81" resource-id="4" units="33"/>
+    <allocation task-id="73" resource-id="4" units="33"/>
+    <allocation task-id="74" resource-id="4" units="33"/>
+    <allocation task-id="65" resource-id="4" units="11"/>
+    <allocation task-id="59" resource-id="4" units="33"/>
+    <allocation task-id="60" resource-id="4" units="33"/>
+    <allocation task-id="56" resource-id="4" units="33"/>
+    <allocation task-id="49" resource-id="4" units="25"/>
+    <allocation task-id="50" resource-id="4" units="25"/>
+    <allocation task-id="42" resource-id="4" units="33"/>
+    <allocation task-id="43" resource-id="4" units="33"/>
+    <allocation task-id="34" resource-id="4" units="14"/>
+    <allocation task-id="32" resource-id="4" units="14"/>
+    <allocation task-id="29" resource-id="4" units="33"/>
+    <allocation task-id="25" resource-id="4" units="14"/>
+    <allocation task-id="24" resource-id="4" units="50"/>
+    <allocation task-id="18" resource-id="4" units="14"/>
+    <allocation task-id="16" resource-id="4" units="14"/>
+    <allocation task-id="17" resource-id="4" units="14"/>
+    <allocation task-id="14" resource-id="4" units="13"/>
+    <allocation task-id="8" resource-id="4" units="14"/>
+    <allocation task-id="7" resource-id="4" units="17"/>
+    <allocation task-id="6" resource-id="4" units="50"/>
+    <allocation task-id="184" resource-id="5" units="9"/>
+    <allocation task-id="180" resource-id="5" units="33"/>
+    <allocation task-id="181" resource-id="5" units="33"/>
+    <allocation task-id="182" resource-id="5" units="33"/>
+    <allocation task-id="183" resource-id="5" units="33"/>
+    <allocation task-id="179" resource-id="5" units="33"/>
+    <allocation task-id="169" resource-id="5" units="33"/>
+    <allocation task-id="170" resource-id="5" units="33"/>
+    <allocation task-id="171" resource-id="5" units="33"/>
+    <allocation task-id="172" resource-id="5" units="33"/>
+    <allocation task-id="160" resource-id="5" units="33"/>
+    <allocation task-id="161" resource-id="5" units="33"/>
+    <allocation task-id="162" resource-id="5" units="33"/>
+    <allocation task-id="158" resource-id="5" units="10"/>
+    <allocation task-id="155" resource-id="5" units="33"/>
+    <allocation task-id="156" resource-id="5" units="33"/>
+    <allocation task-id="157" resource-id="5" units="33"/>
+    <allocation task-id="145" resource-id="5" units="33"/>
+    <allocation task-id="146" resource-id="5" units="33"/>
+    <allocation task-id="132" resource-id="5" units="33"/>
+    <allocation task-id="133" resource-id="5" units="33"/>
+    <allocation task-id="127" resource-id="5" units="10"/>
+    <allocation task-id="124" resource-id="5" units="33"/>
+    <allocation task-id="125" resource-id="5" units="33"/>
+    <allocation task-id="126" resource-id="5" units="33"/>
+    <allocation task-id="114" resource-id="5" units="33"/>
+    <allocation task-id="115" resource-id="5" units="33"/>
+    <allocation task-id="101" resource-id="5" units="33"/>
+    <allocation task-id="102" resource-id="5" units="33"/>
+    <allocation task-id="96" resource-id="5" units="11"/>
+    <allocation task-id="93" resource-id="5" units="33"/>
+    <allocation task-id="94" resource-id="5" units="33"/>
+    <allocation task-id="95" resource-id="5" units="33"/>
+    <allocation task-id="84" resource-id="5" units="33"/>
+    <allocation task-id="83" resource-id="5" units="33"/>
+    <allocation task-id="76" resource-id="5" units="33"/>
+    <allocation task-id="77" resource-id="5" units="33"/>
+    <allocation task-id="70" resource-id="5" units="33"/>
+    <allocation task-id="71" resource-id="5" units="33"/>
+    <allocation task-id="65" resource-id="5" units="11"/>
+    <allocation task-id="62" resource-id="5" units="33"/>
+    <allocation task-id="63" resource-id="5" units="33"/>
+    <allocation task-id="64" resource-id="5" units="33"/>
+    <allocation task-id="52" resource-id="5" units="33"/>
+    <allocation task-id="53" resource-id="5" units="33"/>
+    <allocation task-id="39" resource-id="5" units="33"/>
+    <allocation task-id="40" resource-id="5" units="33"/>
+    <allocation task-id="33" resource-id="5" units="50"/>
+    <allocation task-id="34" resource-id="5" units="14"/>
+    <allocation task-id="32" resource-id="5" units="14"/>
+    <allocation task-id="27" resource-id="5" units="33"/>
+    <allocation task-id="25" resource-id="5" units="14"/>
+    <allocation task-id="22" resource-id="5" units="50"/>
+    <allocation task-id="18" resource-id="5" units="14"/>
+    <allocation task-id="16" resource-id="5" units="14"/>
+    <allocation task-id="17" resource-id="5" units="14"/>
+    <allocation task-id="14" resource-id="5" units="13"/>
+    <allocation task-id="12" resource-id="5" units="20"/>
+    <allocation task-id="13" resource-id="5" units="50"/>
+    <allocation task-id="10" resource-id="5" units="50"/>
+    <allocation task-id="11" resource-id="5" units="50"/>
+    <allocation task-id="9" resource-id="5" units="0"/>
+    <allocation task-id="8" resource-id="5" units="14"/>
+    <allocation task-id="7" resource-id="5" units="17"/>
+    <allocation task-id="4" resource-id="5" units="50"/>
+    <allocation task-id="184" resource-id="6" units="9"/>
+    <allocation task-id="175" resource-id="6" units="33"/>
+    <allocation task-id="165" resource-id="6" units="17"/>
+    <allocation task-id="166" resource-id="6" units="33"/>
+    <allocation task-id="158" resource-id="6" units="10"/>
+    <allocation task-id="148" resource-id="6" units="33"/>
+    <allocation task-id="149" resource-id="6" units="33"/>
+    <allocation task-id="138" resource-id="6" units="33"/>
+    <allocation task-id="139" resource-id="6" units="33"/>
+    <allocation task-id="130" resource-id="6" units="33"/>
+    <allocation task-id="127" resource-id="6" units="10"/>
+    <allocation task-id="117" resource-id="6" units="33"/>
+    <allocation task-id="118" resource-id="6" units="33"/>
+    <allocation task-id="107" resource-id="6" units="33"/>
+    <allocation task-id="108" resource-id="6" units="33"/>
+    <allocation task-id="99" resource-id="6" units="33"/>
+    <allocation task-id="96" resource-id="6" units="11"/>
+    <allocation task-id="87" resource-id="6" units="33"/>
+    <allocation task-id="86" resource-id="6" units="33"/>
+    <allocation task-id="68" resource-id="6" units="100"/>
+    <allocation task-id="65" resource-id="6" units="11"/>
+    <allocation task-id="58" resource-id="6" units="33"/>
+    <allocation task-id="48" resource-id="6" units="33"/>
+    <allocation task-id="45" resource-id="6" units="33"/>
+    <allocation task-id="46" resource-id="6" units="33"/>
+    <allocation task-id="37" resource-id="6" units="33"/>
+    <allocation task-id="34" resource-id="6" units="14"/>
+    <allocation task-id="32" resource-id="6" units="14"/>
+    <allocation task-id="28" resource-id="6" units="33"/>
+    <allocation task-id="25" resource-id="6" units="14"/>
+    <allocation task-id="23" resource-id="6" units="50"/>
+    <allocation task-id="18" resource-id="6" units="14"/>
+    <allocation task-id="16" resource-id="6" units="14"/>
+    <allocation task-id="17" resource-id="6" units="14"/>
+    <allocation task-id="14" resource-id="6" units="13"/>
+    <allocation task-id="8" resource-id="6" units="14"/>
+    <allocation task-id="7" resource-id="6" units="17"/>
+    <allocation task-id="5" resource-id="6" units="50"/>
+    <allocation task-id="184" resource-id="7" units="9"/>
+    <allocation task-id="177" resource-id="7" units="33"/>
+    <allocation task-id="176" resource-id="7" units="33"/>
+    <allocation task-id="165" resource-id="7" units="17"/>
+    <allocation task-id="167" resource-id="7" units="33"/>
+    <allocation task-id="158" resource-id="7" units="10"/>
+    <allocation task-id="151" resource-id="7" units="33"/>
+    <allocation task-id="152" resource-id="7" units="33"/>
+    <allocation task-id="153" resource-id="7" units="33"/>
+    <allocation task-id="141" resource-id="7" units="33"/>
+    <allocation task-id="142" resource-id="7" units="33"/>
+    <allocation task-id="143" resource-id="7" units="33"/>
+    <allocation task-id="135" resource-id="7" units="33"/>
+    <allocation task-id="136" resource-id="7" units="33"/>
+    <allocation task-id="127" resource-id="7" units="10"/>
+    <allocation task-id="120" resource-id="7" units="33"/>
+    <allocation task-id="121" resource-id="7" units="33"/>
+    <allocation task-id="122" resource-id="7" units="33"/>
+    <allocation task-id="111" resource-id="7" units="33"/>
+    <allocation task-id="110" resource-id="7" units="33"/>
+    <allocation task-id="112" resource-id="7" units="33"/>
+    <allocation task-id="104" resource-id="7" units="33"/>
+    <allocation task-id="105" resource-id="7" units="33"/>
+    <allocation task-id="96" resource-id="7" units="11"/>
+    <allocation task-id="89" resource-id="7" units="33"/>
+    <allocation task-id="90" resource-id="7" units="33"/>
+    <allocation task-id="91" resource-id="7" units="33"/>
+    <allocation task-id="80" resource-id="7" units="33"/>
+    <allocation task-id="79" resource-id="7" units="33"/>
+    <allocation task-id="81" resource-id="7" units="33"/>
+    <allocation task-id="73" resource-id="7" units="33"/>
+    <allocation task-id="74" resource-id="7" units="33"/>
+    <allocation task-id="65" resource-id="7" units="11"/>
+    <allocation task-id="59" resource-id="7" units="33"/>
+    <allocation task-id="60" resource-id="7" units="33"/>
+    <allocation task-id="56" resource-id="7" units="33"/>
+    <allocation task-id="49" resource-id="7" units="25"/>
+    <allocation task-id="50" resource-id="7" units="25"/>
+    <allocation task-id="42" resource-id="7" units="33"/>
+    <allocation task-id="43" resource-id="7" units="33"/>
+    <allocation task-id="34" resource-id="7" units="14"/>
+    <allocation task-id="32" resource-id="7" units="14"/>
+    <allocation task-id="29" resource-id="7" units="33"/>
+    <allocation task-id="25" resource-id="7" units="14"/>
+    <allocation task-id="24" resource-id="7" units="50"/>
+    <allocation task-id="18" resource-id="7" units="14"/>
+    <allocation task-id="16" resource-id="7" units="14"/>
+    <allocation task-id="17" resource-id="7" units="14"/>
+    <allocation task-id="14" resource-id="7" units="13"/>
+    <allocation task-id="12" resource-id="7" units="20"/>
+    <allocation task-id="8" resource-id="7" units="14"/>
+    <allocation task-id="7" resource-id="7" units="17"/>
+    <allocation task-id="6" resource-id="7" units="50"/>
+    <allocation task-id="184" resource-id="8" units="9"/>
+    <allocation task-id="14" resource-id="8" units="13"/>
+    <allocation task-id="158" resource-id="9" units="10"/>
+    <allocation task-id="127" resource-id="9" units="10"/>
+    <allocation task-id="34" resource-id="9" units="14"/>
+    <allocation task-id="32" resource-id="9" units="14"/>
+    <allocation task-id="25" resource-id="9" units="14"/>
+    <allocation task-id="18" resource-id="9" units="14"/>
+    <allocation task-id="16" resource-id="9" units="14"/>
+    <allocation task-id="17" resource-id="9" units="14"/>
+    <allocation task-id="12" resource-id="9" units="20"/>
+    <allocation task-id="9" resource-id="9" units="0"/>
+    <allocation task-id="8" resource-id="9" units="14"/>
+    <allocation task-id="184" resource-id="10" units="9"/>
+    <allocation task-id="180" resource-id="10" units="33"/>
+    <allocation task-id="181" resource-id="10" units="33"/>
+    <allocation task-id="182" resource-id="10" units="33"/>
+    <allocation task-id="183" resource-id="10" units="33"/>
+    <allocation task-id="179" resource-id="10" units="33"/>
+    <allocation task-id="169" resource-id="10" units="33"/>
+    <allocation task-id="170" resource-id="10" units="33"/>
+    <allocation task-id="171" resource-id="10" units="33"/>
+    <allocation task-id="172" resource-id="10" units="33"/>
+    <allocation task-id="160" resource-id="10" units="33"/>
+    <allocation task-id="161" resource-id="10" units="33"/>
+    <allocation task-id="162" resource-id="10" units="33"/>
+    <allocation task-id="158" resource-id="10" units="10"/>
+    <allocation task-id="155" resource-id="10" units="33"/>
+    <allocation task-id="156" resource-id="10" units="33"/>
+    <allocation task-id="157" resource-id="10" units="33"/>
+    <allocation task-id="145" resource-id="10" units="33"/>
+    <allocation task-id="146" resource-id="10" units="33"/>
+    <allocation task-id="132" resource-id="10" units="33"/>
+    <allocation task-id="133" resource-id="10" units="33"/>
+    <allocation task-id="127" resource-id="10" units="10"/>
+    <allocation task-id="124" resource-id="10" units="33"/>
+    <allocation task-id="125" resource-id="10" units="33"/>
+    <allocation task-id="126" resource-id="10" units="33"/>
+    <allocation task-id="114" resource-id="10" units="33"/>
+    <allocation task-id="115" resource-id="10" units="33"/>
+    <allocation task-id="101" resource-id="10" units="33"/>
+    <allocation task-id="102" resource-id="10" units="33"/>
+    <allocation task-id="96" resource-id="10" units="11"/>
+    <allocation task-id="93" resource-id="10" units="33"/>
+    <allocation task-id="94" resource-id="10" units="33"/>
+    <allocation task-id="95" resource-id="10" units="33"/>
+    <allocation task-id="84" resource-id="10" units="33"/>
+    <allocation task-id="83" resource-id="10" units="33"/>
+    <allocation task-id="76" resource-id="10" units="33"/>
+    <allocation task-id="77" resource-id="10" units="33"/>
+    <allocation task-id="70" resource-id="10" units="33"/>
+    <allocation task-id="71" resource-id="10" units="33"/>
+    <allocation task-id="68" resource-id="10" units="100"/>
+    <allocation task-id="65" resource-id="10" units="11"/>
+    <allocation task-id="62" resource-id="10" units="33"/>
+    <allocation task-id="63" resource-id="10" units="33"/>
+    <allocation task-id="64" resource-id="10" units="33"/>
+    <allocation task-id="52" resource-id="10" units="33"/>
+    <allocation task-id="53" resource-id="10" units="33"/>
+    <allocation task-id="39" resource-id="10" units="33"/>
+    <allocation task-id="40" resource-id="10" units="33"/>
+    <allocation task-id="27" resource-id="10" units="33"/>
+    <allocation task-id="184" resource-id="11" units="9"/>
+    <allocation task-id="175" resource-id="11" units="33"/>
+    <allocation task-id="165" resource-id="11" units="17"/>
+    <allocation task-id="166" resource-id="11" units="33"/>
+    <allocation task-id="158" resource-id="11" units="10"/>
+    <allocation task-id="148" resource-id="11" units="33"/>
+    <allocation task-id="149" resource-id="11" units="33"/>
+    <allocation task-id="138" resource-id="11" units="33"/>
+    <allocation task-id="139" resource-id="11" units="33"/>
+    <allocation task-id="130" resource-id="11" units="33"/>
+    <allocation task-id="127" resource-id="11" units="10"/>
+    <allocation task-id="117" resource-id="11" units="33"/>
+    <allocation task-id="118" resource-id="11" units="33"/>
+    <allocation task-id="107" resource-id="11" units="33"/>
+    <allocation task-id="108" resource-id="11" units="33"/>
+    <allocation task-id="99" resource-id="11" units="33"/>
+    <allocation task-id="96" resource-id="11" units="11"/>
+    <allocation task-id="87" resource-id="11" units="33"/>
+    <allocation task-id="86" resource-id="11" units="33"/>
+    <allocation task-id="65" resource-id="11" units="11"/>
+    <allocation task-id="58" resource-id="11" units="33"/>
+    <allocation task-id="48" resource-id="11" units="33"/>
+    <allocation task-id="45" resource-id="11" units="33"/>
+    <allocation task-id="46" resource-id="11" units="33"/>
+    <allocation task-id="37" resource-id="11" units="33"/>
+    <allocation task-id="28" resource-id="11" units="33"/>
+    <allocation task-id="184" resource-id="12" units="9"/>
+    <allocation task-id="177" resource-id="12" units="33"/>
+    <allocation task-id="176" resource-id="12" units="33"/>
+    <allocation task-id="165" resource-id="12" units="17"/>
+    <allocation task-id="167" resource-id="12" units="33"/>
+    <allocation task-id="158" resource-id="12" units="10"/>
+    <allocation task-id="151" resource-id="12" units="33"/>
+    <allocation task-id="152" resource-id="12" units="33"/>
+    <allocation task-id="153" resource-id="12" units="33"/>
+    <allocation task-id="141" resource-id="12" units="33"/>
+    <allocation task-id="142" resource-id="12" units="33"/>
+    <allocation task-id="143" resource-id="12" units="33"/>
+    <allocation task-id="135" resource-id="12" units="33"/>
+    <allocation task-id="136" resource-id="12" units="33"/>
+    <allocation task-id="127" resource-id="12" units="10"/>
+    <allocation task-id="120" resource-id="12" units="33"/>
+    <allocation task-id="121" resource-id="12" units="33"/>
+    <allocation task-id="122" resource-id="12" units="33"/>
+    <allocation task-id="111" resource-id="12" units="33"/>
+    <allocation task-id="110" resource-id="12" units="33"/>
+    <allocation task-id="112" resource-id="12" units="33"/>
+    <allocation task-id="104" resource-id="12" units="33"/>
+    <allocation task-id="105" resource-id="12" units="33"/>
+    <allocation task-id="96" resource-id="12" units="11"/>
+    <allocation task-id="89" resource-id="12" units="33"/>
+    <allocation task-id="90" resource-id="12" units="33"/>
+    <allocation task-id="91" resource-id="12" units="33"/>
+    <allocation task-id="80" resource-id="12" units="33"/>
+    <allocation task-id="79" resource-id="12" units="33"/>
+    <allocation task-id="81" resource-id="12" units="33"/>
+    <allocation task-id="73" resource-id="12" units="33"/>
+    <allocation task-id="74" resource-id="12" units="33"/>
+    <allocation task-id="65" resource-id="12" units="11"/>
+    <allocation task-id="59" resource-id="12" units="33"/>
+    <allocation task-id="60" resource-id="12" units="33"/>
+    <allocation task-id="56" resource-id="12" units="33"/>
+    <allocation task-id="49" resource-id="12" units="25"/>
+    <allocation task-id="50" resource-id="12" units="25"/>
+    <allocation task-id="42" resource-id="12" units="33"/>
+    <allocation task-id="43" resource-id="12" units="33"/>
+    <allocation task-id="29" resource-id="12" units="33"/>
+  </allocations>
+</project>
